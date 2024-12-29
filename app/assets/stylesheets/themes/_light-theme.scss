@@ -1,0 +1,123 @@
+@import "theme-template";
+
+// variables
+
+$primary-text-color: darken(#bed5db, 30%);
+$secondary-text-color: lighten($primary-text-color, 35%);
+$inactive-text-color: lighten($primary-text-color, 35%);
+$light-text-color: #656565;
+$dark-text-color: lighten($light-text-color, 5%);
+$link-text-color: #3d3d3d;
+$error-text-color: #e3745b;
+
+$settings-select-bg: #bed5db;
+$settings-select-color: #656565;
+$settings-api-node-border-color: #bed5db;
+$main-content-margin-block-bg-color: #bed5db;
+$bg-color: #bed5db;
+$panel-bg-color: #2c2e37;
+$light-panel-bg-color: #656565;
+$super-light-panel-bg-color: darken($light-panel-bg-color, 1%);
+$settings-menu-hover-bg: darken($light-panel-bg-color, 30%);
+$settings-menu-active-bg: darken($light-panel-bg-color, 10%);
+$button-bg-color: #a1c1d6;
+$secondary-button-bg-color: #546979;
+$input-background: darken($bg-color, 10%);
+
+$alert-color: $error-text-color;
+$info-color: #ce7925;
+$success-color: #21d19f;
+$warning-color: #f35b92;
+$fee-color: #7f055e;
+
+// Exchange colors
+$bid-color: #258a14;
+$ask-color: #ea340b;
+$call-color: #bbbf2b;
+$positive-color: #528c0a;
+$negative-color: rgba(225, 66, 74, 1);
+$row-accent-color: #bed5db;
+$header-color: #dcdcdc;
+
+// Account table view colors
+$account-header: #c6e9f1;
+$account-cells: #dadada;
+$account-green: #488a00;
+$account-primarytext: $primary-text-color;
+$account-dimmed: #c6e9f1;
+$account-border: rgba(50, 49, 49, 0.1);
+$account-background: #bed5db;
+$account-tabs-background: #bed5db;
+
+
+$pulsate-green-start: $account-green;
+$pulsate-green-end: #70c117;
+$pulsate-red-start: $negative-color;
+$pulsate-red-end: #e87f84;
+
+$modal-bg-color: #bed5db;
+
+$positive-color-alternative: #c6e9f1;
+$negative-color-alternative: #c6e9f1;
+$medium-color: #ff9900;
+$dark-help-text: #171a25;
+$separator-line: rgba(23, 26, 37, 0.3);
+
+$mobile-input-bg: $input-background;
+
+$incognito-bg: #ea340b;
+
+.lightTheme {
+    @include theme(
+        $primary-text-color,
+        $bg-color,
+        $dark-text-color,
+        $inactive-text-color,
+        $link-text-color,
+        $light-text-color,
+        $secondary-text-color,
+        $success-color,
+        $info-color,
+        $warning-color,
+        $alert-color,
+        $super-light-panel-bg-color,
+        $panel-bg-color,
+        $button-bg-color,
+        $secondary-button-bg-color,
+        $fee-color,
+        $bid-color,
+        $ask-color,
+        $call-color,
+        $light-panel-bg-color,
+        $positive-color,
+        $negative-color,
+        $row-accent-color,
+        $header-color,
+        $input-background,
+        $account-header,
+        $account-cells,
+        $account-green,
+        $account-primarytext,
+        $account-dimmed,
+        $account-border,
+        $account-background,
+        $account-tabs-background,
+        $pulsate-green-start,
+        $pulsate-green-end,
+        $pulsate-red-start,
+        $pulsate-red-end,
+        $settings-select-bg,
+        $settings-select-color,
+        $settings-menu-hover-bg,
+        $settings-menu-active-bg,
+        $settings-api-node-border-color,
+        $main-content-margin-block-bg-color,
+        $modal-bg-color,
+        $mobile-input-bg,
+        $incognito-bg
+    );
+
+    .change-up {
+        font-weight: bold;
+    }
+}
