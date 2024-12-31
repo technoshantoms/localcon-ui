@@ -1,9 +1,9 @@
 # Fees
 
-In the LocalCoin ecosystem every operation is assigned an *individual* fee.
+In the Cloud Bank ecosystem every operation is assigned an *individual* fee.
 These fees are subject to change. However, they are defined solely by
-shareholder approval, thus each and every shareholder of the LocalCoin core
-asset (LLC) has a say as to what the fees should be. If shareholders can be
+shareholder approval, thus each and every shareholder of the Cloud Bank core
+asset (CBANK) has a say as to what the fees should be. If shareholders can be
 convinced to reduce a certain fee and consensus is reached, the fee will be
 reduced automatically by the blockchain. Changes of blockchain parameters are
 proposed by members of the committee. These members are voted by shareholders

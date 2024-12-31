@@ -251,7 +251,7 @@ class ImportKeys extends Component {
     }
 
     /**
-    LLC 1.0 hosted wallet backup (wallet.localcoin.is) is supported.
+    LLC 1.0 hosted wallet backup (acloudbank.com) is supported.
 
     LLC 1.0 native wallets should use wallet_export_keys instead of a wallet backup.
 

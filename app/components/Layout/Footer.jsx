@@ -70,7 +70,7 @@ class Footer extends React.Component {
         var theme = SettingsStore.getState().settings.get("themes");
 
         if (hintData.length == 0) {
-            window.open("/help", "_blank");
+            window.open("/", "_blank");
         } else {
             guide
                 .introJs()
@@ -289,7 +289,7 @@ class Footer extends React.Component {
                             type="button"
                             onClick={e => {
                                 e.preventDefault();
-                                this.context.router.push("/help");
+                                this.context.router.push("/");
                             }}
                         >
                             {counterpart.translate("global.help")}

@@ -32,9 +32,9 @@ import AccountVesting from "./components/Account/AccountVesting";
 import AccountDepositWithdraw from "./components/Account/AccountDepositWithdraw";
 import AccountPermissions from "./components/Account/AccountPermissions";
 import AccountWhitelist from "./components/Account/AccountWhitelist";
-//import AccountVoting from "./components/Account/AccountVoting";
+import AccountVoting from "./components/Account/AccountVoting";
 import AccountActivenodes from "./components/Account/AccountActivenodes";
-//import Listing from "./components/Listing/ListingPage"
+import OTC from "./components/OTC/OTC";
 import Page404 from "./components/Page404/Page404";
 // import AccountOrders from "./components/Account/AccountOrders";
 import AccountSignedMessages from "./components/Account/AccountSignedMessages";
@@ -222,16 +222,15 @@ const routes = (
                 footerBlock: Footer
             }}
         />
-       {/* <Route
-            path="Listing"
+        <Route
+            path="OTC"
             component={{
                 headerBlock: Header,
                 sidebarBlock: null,
-                contentBlock: Listing,
+                contentBlock: OTC,
                 footerBlock: Footer
             }}
         />
-        */}
         <Route
             path="transfer"
             components={{
@@ -377,7 +376,7 @@ const routes = (
             <Route path="member-stats" component={AccountMembership} />
             <Route path="vesting" component={AccountVesting} />
             <Route path="permissions" component={AccountPermissions} />
-            {/* <Route path="voting" component={AccountVoting} /> */}
+            <Route path="voting" component={AccountVoting} />
             <Route path="whitelist" component={AccountWhitelist} />
             <Route path="signedmessages" component={AccountSignedMessages} />
             <Redirect from="overview" to="/account/:account_name" />

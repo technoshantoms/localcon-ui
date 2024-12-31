@@ -310,20 +310,19 @@ const routes = (
                 footerBlock: Footer
             }}
         />
-       {/* <Route
-            path="Listing"
+        <Route
+            path="OTC"
             getComponents={(location, cb) => {
                 Promise.all([
                     import("components/Layout/Header"),
                     Promise.resolve(null),
-                    import("components/Listing"),
+                    import("components/OTC/OTC"),
                     import("components/Layout/Footer")
                 ])
                     .then(loadMultiComponentsRoute(cb))
                     .catch(errorLoading);
             }}
         />
-        */}
         <Route
             path="activenode"
             getComponents={(location, cb) => {

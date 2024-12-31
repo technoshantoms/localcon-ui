@@ -28,7 +28,7 @@ class DepositWithdrawAssetSelector extends React.Component {
                     label: backedCoin,
                     gateway: gateway,
                     gateFee: item.gateFee,
-                    issuer: item.issuerId || "1.2.96397" //Fall back to open ledger
+                    issuer: item.issuerId || "1.2.17" //Fall back to open ledger
                 };
             } else {
                 return null;

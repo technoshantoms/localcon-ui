@@ -75,7 +75,7 @@ class AssetName extends React.Component {
                           )
                         : "";
             } catch (e) {}
-            if (isBitAsset && name === "CNY") {
+            if (isBitAsset && name === "KSH") {
                 optional =
                     optional + counterpart.translate("gateway.assets.bitcny");
             }

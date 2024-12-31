@@ -14,7 +14,7 @@ import {
     getUnits
 } from "branding";
 
-const CORE_ASSET = "CBANK"; // Setting this to CBANK to prevent loading issues when used with CBANK chain which is the most usual case currently
+const CORE_ASSET = "CBANK"; // Setting this to LLC to prevent loading issues when used with LLC chain which is the most usual case currently
 
 const STORAGE_KEY = "__graphene__";
 let ss = new ls(STORAGE_KEY);
@@ -201,7 +201,7 @@ class SettingsStore {
             // Default markets setup
             let topMarkets = {
                 markets_4018d784: getMyMarketsQuotes(),
-                markets_d1de01c8: getMyMarketsQuotes(),
+                markets_806101b8: getMyMarketsQuotes(),
                 markets_39f5e2ed: [
                     // TESTNET
                     "PEG.FAKEUSD",
@@ -211,7 +211,7 @@ class SettingsStore {
 
             let bases = {
                 markets_4018d784: getMyMarketsBases(),
-                markets_d1de01c8: getMyMarketsBases(),
+                markets_806101b8: getMyMarketsBases(),
                 markets_39f5e2ed: [
                     // TESTNET
                     "TEST"
@@ -220,7 +220,7 @@ class SettingsStore {
 
             let coreAssets = {
                 markets_4018d784: "BTS",
-                markets_d1de01c8: "CBANK",
+                markets_806101b8: "CBANK",
                 markets_39f5e2ed: "TEST"
             };
             let coreAsset = coreAssets[this.starredKey] || "CBANK";

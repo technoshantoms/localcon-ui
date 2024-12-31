@@ -2,27 +2,27 @@
 
 // variables
 
-$primary-text-color: darken(#bed5db, 30%);
-$secondary-text-color: lighten($primary-text-color, 35%);
-$inactive-text-color: lighten($primary-text-color, 35%);
-$light-text-color: #656565;
-$dark-text-color: lighten($light-text-color, 5%);
-$link-text-color: #3d3d3d;
+$primary-text-color: darken(#3d3d3d, 10%);
+$secondary-text-color: lighten($primary-text-color, 22%);
+$inactive-text-color: lighten($primary-text-color, 25%);
+$light-text-color: #3d3d3d;
+$dark-text-color: lighten($light-text-color, 12%);
+$link-text-color: #337ab7;
 $error-text-color: #e3745b;
 
-$settings-select-bg: #bed5db;
+$settings-select-bg: #e5e6e4;
 $settings-select-color: #656565;
-$settings-api-node-border-color: #bed5db;
-$main-content-margin-block-bg-color: #bed5db;
-$bg-color: #bed5db;
-$panel-bg-color: #2c2e37;
-$light-panel-bg-color: #656565;
+$settings-api-node-border-color: #e6e6e6;
+$main-content-margin-block-bg-color: #f8f9f8;
+$bg-color: #fff;
+$panel-bg-color: #e5e6e4;
+$light-panel-bg-color: #fff;
 $super-light-panel-bg-color: darken($light-panel-bg-color, 1%);
-$settings-menu-hover-bg: darken($light-panel-bg-color, 30%);
+$settings-menu-hover-bg: darken($light-panel-bg-color, 10%);
 $settings-menu-active-bg: darken($light-panel-bg-color, 10%);
-$button-bg-color: #a1c1d6;
-$secondary-button-bg-color: #546979;
-$input-background: darken($bg-color, 10%);
+$button-bg-color: #2196f3;
+$secondary-button-bg-color: #999999;
+$input-background: darken($bg-color, 8%);
 
 $alert-color: $error-text-color;
 $info-color: #ce7925;
@@ -36,32 +36,25 @@ $ask-color: #ea340b;
 $call-color: #bbbf2b;
 $positive-color: #528c0a;
 $negative-color: rgba(225, 66, 74, 1);
-$row-accent-color: #bed5db;
+$row-accent-color: #ffffff;
 $header-color: #dcdcdc;
 
 // Account table view colors
-$account-header: #c6e9f1;
+$account-header: #b1b1b1;
 $account-cells: #dadada;
 $account-green: #488a00;
 $account-primarytext: $primary-text-color;
-$account-dimmed: #c6e9f1;
+$account-dimmed: #5d5d5d;
 $account-border: rgba(50, 49, 49, 0.1);
-$account-background: #bed5db;
-$account-tabs-background: #bed5db;
-
+$account-background: #e5e6e4;
+$account-tabs-background: #d5d6d4;
 
 $pulsate-green-start: $account-green;
 $pulsate-green-end: #70c117;
 $pulsate-red-start: $negative-color;
 $pulsate-red-end: #e87f84;
 
-$modal-bg-color: #bed5db;
-
-$positive-color-alternative: #c6e9f1;
-$negative-color-alternative: #c6e9f1;
-$medium-color: #ff9900;
-$dark-help-text: #171a25;
-$separator-line: rgba(23, 26, 37, 0.3);
+$modal-bg-color: #dadada;
 
 $mobile-input-bg: $input-background;
 

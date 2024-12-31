@@ -37,7 +37,7 @@
             }
         },
         "create_new": "Create A New Account",
-        "deposit": "Deposit CBANK",
+        "deposit": "Deposit LLC",
         "deposit_address": "Your deposit address is your account name",
         "deposit_withdraw": "Finance",
         "eq_value": "Estimated",
@@ -66,11 +66,11 @@
         "ignore": "Hide",
         "in_open": "This is the amount of %(asset)s you have in open orders.",
         "in_open_value": "This is the estimated value of the %(asset)s you have in open orders.",
-        "intro_text_1": "The sovereign-OS corporate entity",
-        "intro_text_2": "<b>The DEX</b> is inherently decentralized, enabling you to trade the LocalCoin core token (CBANK) and a range of trustless price-stable, market-pegged assets such as USD, CNY, EUR, Gold and more. These assets can all be traded with <b>zero</b> counter-party risk, putting you in total control of your funds.",
+        "intro_text_1": "Your Decentralized Exchange",
+        "intro_text_2": "<b>The DEX</b> is inherently decentralized, enabling you to trade the LocalCoin core token (LLC) and a range of trustless price-stable, market-pegged assets such as USD, CNY, EUR, Gold and more. These assets can all be traded with <b>zero</b> counter-party risk, putting you in total control of your funds.",
         "intro_text_3": "<b>The DEX</b> also enables creation of user-issued assets (UIAs), which can be traded against any other UIAs or trustless assets on the platform.  One well-known issuer on The DEX is <b>OpenLedger</b>, offering a host of assets including BTC, ETH, STEEM, DASH, LTC, DOGE, and many more",
         "intro_text_4": "This gives cryptocurrency traders a unique blend of traditional and decentralized trading, all in a familiar exchange interface. Happy trading!",
-        "intro_text_title": "Welcome to Cloud Bank",
+        "intro_text_title": "Welcome to LocalCoin",
         "login_with": "Login with",
         "market_actions": "Market actions",
         "market_value": "Market Value",
@@ -223,7 +223,7 @@
         "total": "Total ({asset})",
         "total_estimate": "This is the estimated value of all your assets, including any hidden assets, open orders, debt and collateral. The estimate is done using only live blockchain data and may not be perfectly accurate.",
         "total_value": "Total value",
-        "trade": "Exchange",
+        "trade": "Trade",
         "transactions": {
             "fee": "Fee",
             "id": "ID",
@@ -310,7 +310,7 @@
             "reload": "Reload",
             "activenodes": "Activenodes",
             "activenode_requirements": "Activenode requirements",
-            "min_balance": "Recommended Minimum balance is %(val)s CBANK",
+            "min_balance": "Recommended Minimum balance is %(val)s LLC",
             "lifetime_member": "Lifetime Member (LTM) status",
             "localhost_connection": "Local Node has been synced and connected",
             "create_the_activenode": "Create the activenode",
@@ -328,7 +328,7 @@
             "currently_there_are": "Currently there are",
             "activenodes_in_the_network": " activenodes in the network.",
             "approximate_daily_profit_is": "Approximate daily profit is",
-            "llc": " CBANK",
+            "llc": " LLC",
             "add_the_activenode": "Add the activenode",
             "you_must_take_a_few_steps": "You must take a few steps",
             "open_in_witness_node_data_dir_file": "Change in witness_node_data_dir file config.ini",
@@ -767,10 +767,10 @@
             "create": "Create a new worker proposal",
             "create_text_1": "In order to create your new worker, please fill in the form below. The worker will be created using your currently active account, which must already be a lifetime member.",
             "create_text_2": "Consider carefully the parameters you choose as they can not be changed once you've published your worker.",
-            "daily_pay": "Daily pay (CBANK)",
+            "daily_pay": "Daily pay (LLC)",
             "date_text": "The start date should be at least a week into the future in order to allow people the time to discover, evaluate and vote for your worker.",
             "name_text": "The name of your worker should be short and descriptive, something like this: 'Worker Purpose - Account Name'",
-            "pay_text": "The daily pay defines how much you want to be paid per day and is defined in CBANK. The current best practice is to define a salary in USD/CNY, and commit to burning whatever surplus you receive as a result of the CBANK price increasing. As long as your worker is active and has sufficient votes to be above the refund worker, you will receive this daily salary.",
+            "pay_text": "The daily pay defines how much you want to be paid per day and is defined in LLC. The current best practice is to define a salary in USD/CNY, and commit to burning whatever surplus you receive as a result of the LLC price increasing. As long as your worker is active and has sufficient votes to be above the refund worker, you will receive this daily salary.",
             "period": "Duration",
             "title": "Worker name",
             "url_text": "You should supply a website, github document or google doc that describes in more detail the purpose of the worker and how you intend to use the worker pay.",
@@ -829,7 +829,7 @@
         "bitkapital_text": "Choose an asset to deposit or withdraw:",
         "bitkapital_withdraw": "You are withdrawing",
         "bridge": "Bridge",
-        "bridge_text": "A bridge lets you exchange an asset into another one, for example BTC to CBANK.",
+        "bridge_text": "A bridge lets you exchange an asset into another one, for example BTC to LLC.",
         "calc": "Calculating",
         "choose_deposit": "Please select the coin you would like to deposit",
         "choose_withdraw": "Please select the coin you would like to withdraw",
@@ -955,13 +955,13 @@
         "dashboard": "Dashboard",
         "deposit-withdraw": "Finance",
         "exchange": "Trade",
-        "explorer": "Blockchain",
+        "explorer": "Explorer",
         "help": "Help",
         "lock": "Log out (lock the local wallet)",
         "lock_short": "Log out",
         "locked_tip": "<br/>Click to login.<br/><br/>Closing the browser window will also log you out.",
         "logout": "Logout",
-        "otc": "Listing",
+        "otc": "OTC",
         "payments": "Send",
         "payments_beta": "Send (Beta)",
         "payments_legacy": "Send (legacy)",
@@ -1144,7 +1144,7 @@
             "address_generation_error": "Unable to generate address",
             "amount": "Amount to Deposit",
             "asset": "Asset",
-            "bts_transfer_description": "It's easy to receive CBANK from anywhere. As long as CBANK is sent to your account name it will show up in your wallet. This QR code also contains your account name.",
+            "bts_transfer_description": "It's easy to receive LLC from anywhere. As long as LLC is sent to your account name it will show up in your wallet. This QR code also contains your account name.",
             "cancel": "Cancel",
             "close": "Close",
             "copy_message": "Address was copied",
@@ -1384,7 +1384,7 @@
         "backup_favoritesbtn": "Backup favorites",
         "backup_favoritestext": "Back up your favorites to restore them later after updates.",
         "backup_key": "Import a private key",
-        "backup_legacy": "Import a CBANK 0.9.3c key export file (.json)",
+        "backup_legacy": "Import a LLC 0.9.3c key export file (.json)",
         "backup_text": "Create backups here.",
         "backupcreate_backup": "Create local wallet backup",
         "backupcreate_brainkey": "Create brainkey backup",
@@ -1413,7 +1413,7 @@
         "lightTheme": "Light",
         "local_wallet": "Local Wallet Login",
         "locale": "Switch language",
-        "lookup_text": "Click the button below to check for unclaimed balances from CBANK 1.0",
+        "lookup_text": "Click the button below to check for unclaimed balances from LLC 1.0",
         "low_latency": "Low latency",
         "medium_latency": "Medium latency",
         "midnightTheme": "Midnight",
@@ -1494,7 +1494,7 @@
         "propose_tip": "Propose another user to initiate a transaction",
         "proxy_remove": "You have a proxy set, to remove it simply clear this input field",
         "proxy_search": "Search for an account to be used as your proxy for voting",
-        "settle": "Settling will let you convert your holdings of %(asset)s to CBANK after a delay of 24 hours, at a price equal to the feed price at that time.",
+        "settle": "Settling will let you convert your holdings of %(asset)s to LLC after a delay of 24 hours, at a price equal to the feed price at that time.",
         "settle_price": "This is the price at which settle orders will execute.",
         "show_asset": "Click here to show this asset in the main list.",
         "show_block": "Click here to show block #%(block)s where this transaction occurred.",
@@ -1744,7 +1744,7 @@
         "brainkey_w1": "To complete your backup, print this out, or write it down.",
         "brainkey_w2": "Anyone with access to your recovery key will",
         "brainkey_w3": "have access to funds within this local wallet.",
-        "bts_09_export": "CBANK 0.9.3c key export file (.json)",
+        "bts_09_export": "LLC 0.9.3c key export file (.json)",
         "bts_rules": "The first rule of LocalCoin is: Do not lose your password.<br/>The second rule of LocalCoin is: Do not lose your password.<br />The third rule of LocalCoin is: We cannot recover your password.<br />The fourth rule: If you can remember the password, it's not secure.<br />The fifth rule: Use only randomly-generated passwords.<br />The sixth rule: Do not tell anyone your password.<br />The seventh rule: Always back up your password.",
         "cancel": "Cancel",
         "change": "Change to %(name)s",
@@ -1791,12 +1791,12 @@
         "generated": "Generated password",
         "go_get_started": "Getting Started",
         "has_wallet": "When you create your first LocalCoin account, a LocalCoin bin-file will be automatically created and stored locally in your browser. This local wallet is encrypted with your password, and will contain any private keys belonging to your accounts. It is important to backup this wallet once created!",
-        "import_20_notice1": "Import your CBANK 2.0+ BACKUP first",
+        "import_20_notice1": "Import your LLC 2.0+ BACKUP first",
         "import_20_notice2": "(if you have one)",
         "import_backup": "Import LocalCoin backup (.bin file)",
         "import_backup_choose": "Please select your backup file in the dialog below. This is completely safe as the file is not uploaded anywhere and never leaves your browser.",
         "import_balance": "Import balance(s)",
-        "import_bts": "Import a CBANK 0.9.3c key export",
+        "import_bts": "Import a LLC 0.9.3c key export",
         "import_bts1": "Import from LocalCoin 0.9.3c",
         "import_key_success": "Successfully imported %(count)s keys.",
         "import_keys": "Import Keys",
@@ -1895,192 +1895,6 @@
         "wallet_move": "This backup file can also be used to move your local wallet to different computers or different browsers. In order to restore your local wallet using this backup <strong>you will also need your password!</strong>",
         "wallet_new": "New LocalCoin account",
         "wallet_password": "Login anywhere using your password"
-    },
-     "withdraw": {
-        "create": "Create Withdraw",
-        "form": {
-            "label": {
-                "currency_to_pay_withdrawal_fee": "Withdrawal fee ",
-                "currency_to_pay_transaction_fee": "Transaction fee asset "
-            },
-            "select": {
-                "withdrawal_fee_currency": "Withdrawal fee ",
-                "transaction_fee_currency": "Transaction fee "
-            },
-            "secret": {
-                "label": "Secret",
-                "tooltip": "Your Secret is a random string. You must definitely jot down and save the Secret in order to redeem your Withdraw later. You can use the copy button in this row to save the Secret."
-            }
-        },
-        "session": {
-            "actions": {
-                "create_new_withdraw": "Create Withdraw Transaction",
-                "creating_new_withdraw": "Creating Withdraw Transaction",
-                "check_withdraw_contract_ready_to_sign": "Check Withdraw Contract Ready To Sign"
-            },
-            "title": "Session",
-            "empty": "No sessions",
-            "fields": {
-                "id": {
-                    "label": "ID"
-                },
-                "internal_account": {
-                    "label": "Internal account"
-                },
-                "ethereum_address": {
-                    "label": "Ethereum Address"
-                },
-                "value": {
-                    "label": "Value"
-                },
-                "hash_lock": {
-                    "label": "Hash lock"
-                },
-                "time_lock": {
-                    "label": "Time lock"
-                },
-                "explorer_link": {
-                    "label": "Explorer link"
-                },
-                "internal_htlc_id": {
-                    "label": "Internal HTLC id"
-                },
-                "status": {
-                    "label": "Status",
-                    "list": {
-                        "1": "Created",
-                        "5": "Created in RSquared blockchain",
-                        "10": "Ready for Redeem",
-                        "15": "Completed"
-                    }
-                }
-            },
-            "info": {
-                "contract_not_found": "Transaction is pending, please wait."
-            },
-            "success": {
-                "contract_ready_to_redeem": "Contract ready to redeem"
-            },
-            "warnings": {
-                "waiting_for_contract_creation_in_external_blockchain": "Waiting for contract creation in external blockchain",
-                "waiting_for_contract_creation_in_internal_blockchain": "Waiting for contract creation in internal blockchain",
-                "transaction_is_pending": "Transaction is pending, please wait."
-            }
-        },
-        "title": "Withdraw"
-    },
-     "bots": {
-        "asset_selector": {
-            "wait": "Please wait...",
-            "placeholder": "Your asset"
-        },
-        "common": {
-            "select_strategy": "Antique Type?",
-            "create": "Create",
-            "bot_state": "status:",
-            "start": "Start",
-            "stop": "Deutz",
-            "delete": "Delete",
-            "update": "Update",
-            "select_bot": "USD Payment",
-            "name": "Name",
-            "base": "",
-            "quote": "",
-            "asset": "Asset",
-            "balance": "Value",
-            "amount": "Amount in order",
-            "balance_percent": "balance %",
-            "balance_value": "value",
-            "spread": "Spread, %"
-        },
-        "spread_trade": {
-            "balance_percent": "balance %",
-            "balance_value": "value",
-            "spread": "Spread, %",
-            "default_price": "Default Price",
-            "get_price_from_market": "Get price from market"
-        },
-        "trailing_stop": {
-            "sell_asset": "Sell asset",
-            "get_asset": "Get asset",
-            "amount": "Amount",
-            "min_amount": "Min amount",
-            "stoploss": "Stoploss",
-            "trailing_percent": "Trailing Percent, %"
-        },
-        "percent_up": {
-            "distance": "Distance, %"
-        }
-    },
-    "listing": {
-        "submit_request": "Submit request",
-        "add_coin": " Initialization",
-        "donate": "Asset",
-        "donate_progress": "Crowdfunding progress",
-        "listed": "Listed",
-        "get_donate_tokens": "Get ",
-        "token": " financing to support a project or charity",
-        "goto": "Visit",
-        "loading": "Please wait, loading...",
-        "notice_informed": "By submitting request, I confirm that I've read the rules and conditions and agree with them",
-        "modal": {
-            "header": "Participate in crowdfunding",
-            "header2": "Fundraiser currency: "
-        },
-        "table": {
-            "rank": "#",
-            "asset_name": "Asset name (symbol)",
-            "goal": "Goal",
-            "donates": "Received",
-            "status": "Status",
-            "progress": "Progress",
-            "coming_soon": "Coming soon",
-            "collecting": "Collecting",
-            "waiting": "Waiting",
-            "done": "Collected"
-        },
-        "texts": {
-            "header": "Benefits of crowdfunding",
-            "text1": "Why start a fundraiser? Through crowdfunding, you can quickly and easily raise money for causes close to your heart, all while creating a community of like-minded supporters who are eager to help. Crowdfunding is right for you if you need to raise money fast, like in the case of a personal or financial emergency, or if you want to support a project or charity that needs funds on a deadline. ",
-            "text2": "We ensure a Safe crowdfunding practices that keep donor protection in mind.",
-            "text3": {
-                "t1": "Any Cloud Bank user can support the listing of their favorite assets via crowdfunding. ",
-                "t2": "To that end please ",
-                "get": "acquire "
-            },
-            "text4": {
-                "t1": "fundraiser tokens",
-                "t2": "Crowdfunding consists of Donating asset:->",
-                "t3": "via special \"Crowdfunding progress\" form ( ",
-                "t4": " button next to the asset name)."
-            },
-            "text5": {
-                "t1": "After the project reaches the set crowdfunding threshold all collected tokens are withdraw",
-                "t2": "and our teams initiates the listing procedure, that includes gateway creation and set up of the trading pairs for the asset.",
-                "t3": "Please note that the Cloud Bank team reserves the right to delist assets to protect our own interests and the interests of our customers."
-            },
-            "terms": {
-                "t1": "If your token is included in the voting section for subsequent listing, then the target amount of DONATE tokens for its implementation will be formed according to the following rule:",
-                "t2": "The amount is determined by the position in the rating on CoinMarketCap – the higher the rating, the lower the required amount; you can see the target for each range in parentheses.",
-                "tu1": "1-100 (3000 USD)",
-                "tu2": "101-300 (4000 USD)",
-                "tu3": "301-500 (5000 USD)",
-                "tu4": "500-1000 (7000 USD)",
-                "tu5": "1001 and below (10000 USD)",
-                "t3": "For BEP20 / ERC20 / TRC20 tokens the amount is also determined by the list above, however, for those below the top 300, the target amount will be 5000 DONATE."
-            },
-            "rules": {
-                "header": "Checklist to starts a fundraiser on the Cloud Bank:",
-                "rule_1": "Please check ",
-                "rule_10": "rules",
-                "rule_11": " and submit a listing request.",
-                "rule_2": "Wait for the review results: if everything is in order, then it would be added to the project listing page.",
-                "rule_3": "Use your time to promote your project crowdfunding process via social networks, attract other users. Use",
-                "rule_4": " tokens to reach the crowdfunding goal (a Cloud Bank account is required for this).",
-                "rule_5": "Listing process is initiated after the crowdfunding goal is reach, and begins with the gateway launch preparation. Please provide the contacts for technical/marketing team, or any other qualified contact."
-            },
-            "end": "Good luck with your project and welcome to "
-        }
     },
     "winex": {
         "gateway": {
