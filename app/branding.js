@@ -66,7 +66,7 @@ export function getDefaultLogin() {
  */
 export function getUnits(chainId = "806101b8") {
     if (chainId === "806101b8")
-        return ["BTS", "USD", "CNY", "BTC", "EUR", "GBP", "RUB", "LLC", "ETH", "XMR", "DASH", "LTC", "USDT", "RUB", "UAH"];
+        return ["BTS", "USD", "CNY", "BTC", "EUR", "GBP", "RUB", "CBANK", "ETH", "XMR", "DASH", "LTC", "USDT", "RUB", "UAH"];
     else if (chainId === "39f5e2ed") return ["TEST"];
 }
 
@@ -77,7 +77,7 @@ export function getUnits(chainId = "806101b8") {
  */
 
 export function getMyMarketsBases() {
-    return ["LLC", "ETH", "BTC", "LTC", "XMR", "DASH", "BAT", "USDT", "LINK", "USDC", "TUSD", "USDS", "RUB"];
+    return ["CBANK", "ETH", "BTC", "LTC", "XMR", "DASH", "BAT", "USDT", "LINK", "USDC", "TUSD", "USDS", "RUB"];
 }
 
 /**
@@ -88,7 +88,7 @@ export function getMyMarketsBases() {
 export function getMyMarketsQuotes() {
     let tokens = {
         nativeTokens: [
-                "LLC", "USDT", "BTC", "XMR", "ETH", "LTC", "DASH", "LINK", "USDC", "TUSD", "USDS", "EURS", "HT", "BAT", "SNT", "OMG", "LAMB", "ZB", "HT", "DAI", "ZRX", "USD", "EUR", "CNY", "RUB", "BRL", "GBP", "AUD", "UAH", "TRY", "PLN", "NGN", "KRW", "JPY", "IDR", "VND", "INR", "CTK"
+                "CBANK", "USDT", "BTC", "XMR", "ETH", "LTC", "DASH", "LINK", "USDC", "TUSD", "USDS", "EURS", "HT", "BAT", "SNT", "OMG", "LAMB", "ZB", "HT", "DAI", "ZRX", "USD", "EUR", "CNY", "RUB", "BRL", "GBP", "AUD", "UAH", "TRY", "PLN", "NGN", "KRW", "JPY", "IDR", "VND", "INR", "CTK"
             ]
             //     "GOLD",
             //     "KRW",

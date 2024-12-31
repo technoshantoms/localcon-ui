@@ -69,7 +69,7 @@ module.exports = function(env) {
             ),
             __TESTNET__: !!env.testnet,
             __DEPRECATED__: !!env.deprecated,
-            DEFAULT_SYMBOL: "LLC"
+            DEFAULT_SYMBOL: "CBANK"
         }),
         new webpack.ContextReplacementPlugin(
             /moment[\/\\]locale$/,

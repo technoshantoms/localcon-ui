@@ -45,7 +45,7 @@ const FILE_CONTENT =
     '# witness-id = \n'+
     '\n'+
     '# Tuple of [PublicKey, WIF private key] (may specify multiple times)\n'+
-    'private-key = ["LLC6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV","5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"]\n'+
+    'private-key = ["CBANK6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV","5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"]\n'+
     '\n'+
     '# Name of account that is an activenode\n'+
     'activenode-account = {accountName}\n'+
@@ -54,7 +54,7 @@ const FILE_CONTENT =
     'activenode-private-key = ["{publicKey}","{privateKey}"]\n'+
     '\n'+
     '# Tuple of [PublicKey, WIF private key] (may specify multiple times)\n'+
-    'debug-private-key = ["LLC6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV","5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"]\n'+
+    'debug-private-key = ["CBANK6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV","5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"]\n'+
     '\n'+
     '# Account ID to track history for (may specify multiple times)\n'+
     '# track-account = \n'+
