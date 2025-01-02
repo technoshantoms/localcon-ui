@@ -1,5 +1,5 @@
 import ls from "./localStorage";
-//import {blockTradesAPIs, openledgerAPIs} from "api/apiConfig";
+import {blockTradesAPIs, openledgerAPIs} from "api/apiConfig";
 import {availableGateways} from "common/gateways";
 const blockTradesStorage = new ls("");
 

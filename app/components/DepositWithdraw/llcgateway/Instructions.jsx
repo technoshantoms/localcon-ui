@@ -90,17 +90,15 @@ class Instructions extends React.Component {
         switch (bullet) {
             case "BTC":
                 return 2;
-            case "LTC":
-                return 6;
-            case "DSH":
-                return 6;
-            case "DASH":
-                return 6;
-            case "TTRUSD":
+            case "USD":
                 return 2;
-            case "USDT":
+            case "CBANK":
+                return 6;
+            case "OPEN.USD":
+                return 6;
+            case "OPEN.GOLD":
                 return 2;
-            case "TTREUR":
+            case "OPEN.KSH":
                 return 2;
             case "ETH":
                 return 6;

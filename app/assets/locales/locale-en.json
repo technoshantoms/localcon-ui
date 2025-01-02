@@ -67,7 +67,7 @@
         "in_open": "This is the amount of %(asset)s you have in open orders.",
         "in_open_value": "This is the estimated value of the %(asset)s you have in open orders.",
         "intro_text_1": "Your Decentralized Exchange",
-        "intro_text_2": "<b>The DEX</b> is inherently decentralized, enabling you to trade the Cloud Bank core token (LLC) and a range of trustless price-stable, market-pegged assets such as USD, CNY, EUR, Gold and more. These assets can all be traded with <b>zero</b> counter-party risk, putting you in total control of your funds.",
+        "intro_text_2": "<b>The DEX</b> is inherently decentralized, enabling you to trade the Cloud Bank core token (CBANK) and a range of trustless price-stable, market-pegged assets such as USD, CNY, EUR, Gold and more. These assets can all be traded with <b>zero</b> counter-party risk, putting you in total control of your funds.",
         "intro_text_3": "<b>The DEX</b> also enables creation of user-issued assets (UIAs), which can be traded against any other UIAs or trustless assets on the platform.  One well-known issuer on The DEX is <b>OpenLedger</b>, offering a host of assets including BTC, ETH, STEEM, DASH, LTC, DOGE, and many more",
         "intro_text_4": "This gives cryptocurrency traders a unique blend of traditional and decentralized trading, all in a familiar exchange interface. Happy trading!",
         "intro_text_title": "Welcome to Cloud Bank",
@@ -328,7 +328,7 @@
             "currently_there_are": "Currently there are",
             "activenodes_in_the_network": " activenodes in the network.",
             "approximate_daily_profit_is": "Approximate daily profit is",
-            "llc": " CBNAK",
+            "llc": " CBANK",
             "add_the_activenode": "Add the activenode",
             "you_must_take_a_few_steps": "You must take a few steps",
             "open_in_witness_node_data_dir_file": "Change in witness_node_data_dir file config.ini",
@@ -708,6 +708,164 @@
             "trx": "Transaction",
             "witness": "Witness"
         },
+            "deposit": {
+        "actions": "Actions",
+        "value": "Value",
+        "time_lock": "Time lock",
+        "status": "Status",
+        "title": "Deposit",
+        "sub_title": "or current deposits",
+        "create": "Create deposit",
+        "form": {
+            "account": {
+                "label": "Account"
+            },
+            "amount": {
+                "label": "Amount",
+                "tooltip": "Amount tooltip"
+            },
+            "ees_bridge_is_unavailable": "EES bridge is unavailable. Please try again later.",
+            "secret": {
+                "label": "Secret",
+                "tooltip": "Your Secret is a random string. You must definitely jot down and save the Secret in order to redeem your Deposit later. You can use the copy button in this row to save the Secret.",
+                "copy": {
+                    "tooltip": "Copy Secret to clipboard"
+                }
+            },
+            "hash_lock": {
+                "label": "HashLock",
+                "tooltip": "Advanced users can generate their own SHA-256 Secret and HashLock pair, then click 'Manually enter Hashlock' to enter their own HashLock. After clicking, you can also click 'Use wallet for Secret and HashLock generation' to switch back to a new wallet-generated pair."
+            },
+            "time_lock": {
+                "label": "TimeLock",
+                "tooltip": "A TimeLock date and time will be generated, or you can choose your own if you prefer (there’s a minimum amount of time pre-set). If the transaction isn’t executed before the specified time, it’ll be canceled, and your pledged ETH will be unlocked for refund."
+            },
+            "hash_lock_generator": {
+                "by_wallet": "Use wallet for Secret and HashLock generation",
+                "manually": "Manually enter HashLock"
+            }
+        },
+        "metamask": {
+            "title": "Metamask",
+            "not_installed": "Metamask is not installed",
+            "not_connected": "Metamask is not connected",
+            "connect": "Connect metamask"
+        },
+        "manually": {
+            "instructions": {
+                "label": "Pay manually"
+            },
+            "add_transaction": {
+                "label": "Add transaction hash manually",
+                "tx_hash": "Transaction hash",
+                "submit": "Add"
+            }
+        },
+        "html_created": "HTLC contract created",
+        "redeem": {
+            "title": "Redeem",
+            "secret": "Secret"
+        },
+        "session": {
+            "title": "Session",
+            "empty": "No Deposits",
+            "fields": {
+                "id": {
+                    "label": "Deposit ID"
+                },
+                "internal_account": {
+                    "label": "Internal account"
+                },
+                "value": {
+                    "label": "Value"
+                },
+                "hash_lock": {
+                    "label": "Hash lock"
+                },
+                "time_lock": {
+                    "label": "Time lock"
+                },
+                "explorer_link": {
+                    "label": "Explorer link"
+                },
+                "internal_htlc_id": {
+                    "label": "Internal HTLC id"
+                },
+                "status": {
+                    "label": "Status",
+                    "list": {
+                        "1": "Created",
+                        "5": "Processing",
+                        "10": "Created in RSquared blockchain",
+                        "15": "Completed",
+                        "20": "Completed",
+                        "25": "Completed",
+                        "100": "Burned",
+                        "105": "Refunded",
+                        "110": "Refunded"
+                    }
+                }
+            },
+            "actions": {
+                "create_new_external_contract": "Create new external HTLC contract",
+                "creating_new_external_contract": "Please wait while new external HTLC contract is creating...",
+                "check_deposit_contract_created": "Check deposit contract created",
+                "check_deposit_contract_created_unlock": "Unlock your account"
+            },
+            "errors": {
+                "contract_not_found": "Contract not found, please try again later"
+            },
+            "warnings": {
+                "waiting_for_contract_creation_in_external_blockchain": "Waiting for contract creation in external blockchain",
+                "transaction_is_pending": "Transaction is pending, please wait.",
+                "error_creating_external_contract": "Error creating external contract, please try again."
+            }
+        },
+        "refund": {
+            "button": "EXPIRED/REFUND",
+            "pending": "Transaction is pending, please wait.",
+            "successful": "Refund was successful"
+        }
+    },
+    "metamask": {
+        "title": "Metamask",
+        "not_installed": "Metamask is not installed",
+        "not_connected": "Metamask is not connected.",
+        "unlock_account": "Please open Metamask and unlock your account in Metamask window.",
+        "connect": "Connect metamask"
+    },
+    "network_parameters": {
+        "name": "Name",
+        "description": "Description",
+        "value": "Value",
+        "new_value": "New value",
+        "filter_by_name": "Filter...",
+        "edit": "Edit",
+        "edit_fees": "Edit fees",
+        "edit_modal": {
+            "title": "Edit %(name)s parameter",
+            "value": "Value",
+            "new_value": "New value"
+        },
+        "list": {
+            "title": "Network parameters",
+            "add": "Add"
+        },
+        "add_new_parameter": {
+            "title": "Add new parameter",
+            "name": "Name",
+            "value": "Value"
+        },
+        "create_proposal": {
+            "button": "Create proposal",
+            "modal_title": "Create proposal",
+            "parameters_title": "Parameters to change",
+            "errors": {
+                "empty": "No parameters for saving"
+            }
+        }
+    },
+
         "blocks": {
             "active_committee_members": "Active committee members",
             "active_witnesses": "Active Witnesses",
@@ -767,7 +925,7 @@
             "create": "Create a new worker proposal",
             "create_text_1": "In order to create your new worker, please fill in the form below. The worker will be created using your currently active account, which must already be a lifetime member.",
             "create_text_2": "Consider carefully the parameters you choose as they can not be changed once you've published your worker.",
-            "daily_pay": "Daily pay (LLC)",
+            "daily_pay": "Daily pay (CBANK)",
             "date_text": "The start date should be at least a week into the future in order to allow people the time to discover, evaluate and vote for your worker.",
             "name_text": "The name of your worker should be short and descriptive, something like this: 'Worker Purpose - Account Name'",
             "pay_text": "The daily pay defines how much you want to be paid per day and is defined in CBNAK. The current best practice is to define a salary in USD/CNY, and commit to burning whatever surplus you receive as a result of the CBNAK price increasing. As long as your worker is active and has sufficient votes to be above the refund worker, you will receive this daily salary.",
@@ -790,7 +948,7 @@
         "brainkey": "Backup brainkey recommended",
         "connected": "Connected",
         "connection": "No Blockchain connection",
-        "disconnected": "Disconnected",
+        "disconnected": "Connecting to ..",
         "ieo": "IEO",
         "latency": "Latency",
         "loading": "Loading...",
@@ -1744,7 +1902,7 @@
         "brainkey_w1": "To complete your backup, print this out, or write it down.",
         "brainkey_w2": "Anyone with access to your recovery key will",
         "brainkey_w3": "have access to funds within this local Bank.",
-        "bts_09_export": "LLC 0.9.3c key export file (.json)",
+        "bts_09_export": "CBANK 0.9.3c key export file (.json)",
         "bts_rules": "The first rule of Cloud Bank is: Do not lose your password.<br/>The second rule of Cloud Bank is: Do not lose your password.<br />The third rule of Cloud Bank is: We cannot recover your password.<br />The fourth rule: If you can remember the password, it's not secure.<br />The fifth rule: Use only randomly-generated passwords.<br />The sixth rule: Do not tell anyone your password.<br />The seventh rule: Always back up your password.",
         "cancel": "Cancel",
         "change": "Change to %(name)s",

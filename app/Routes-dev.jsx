@@ -32,6 +32,11 @@ import AccountVesting from "./components/Account/AccountVesting";
 import AccountDepositWithdraw from "./components/Account/AccountDepositWithdraw";
 import AccountPermissions from "./components/Account/AccountPermissions";
 import AccountWhitelist from "./components/Account/AccountWhitelist";
+
+//HTLC GATEWAY
+// import Deposit from "./components/Account/Deposit/Index";
+// import Withdraw from "./components/Account/Withdraw/Index";
+
 import AccountVoting from "./components/Account/AccountVoting";
 import AccountActivenodes from "./components/Account/AccountActivenodes";
 import OTC from "./components/OTC/OTC";
@@ -367,7 +372,7 @@ const routes = (
         >
             <IndexRoute component={AccountOverview} />
             {/* <Route path="dashboard" component={AccountOverview} /> */}
-            {/* <Route path="deposit-withdraw" component={AccountDepositWithdraw} /> */}
+             <Route path="deposit-withdraw" component={AccountDepositWithdraw} /> 
             {/* <Route path="orders" component={AccountOrders} /> */}
 
             <Route path="assets" component={AccountAssets} />

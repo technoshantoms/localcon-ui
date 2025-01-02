@@ -572,9 +572,9 @@ const routes = (
             {/* <Route path="dashboard" getComponent={(location, cb) => {
                 import("components/Account/AccountOverview").then(loadRoute(cb)).catch(errorLoading);
             }}/> */}
-            {/* <Route path="deposit-withdraw" getComponent={(location, cb) => {
+           <Route path="deposit-withdraw" getComponent={(location, cb) => {
                 import("components/Account/AccountDepositWithdraw").then(loadRoute(cb)).catch(errorLoading);
-            }}/> */}
+            }}/> 
             {/* <Route path="orders" getComponent={(location, cb) => {
                 import("components/Account/AccountOrders").then(loadRoute(cb)).catch(errorLoading);
             }}/> */}
@@ -636,6 +636,14 @@ const routes = (
                 }}
             />
             <Route
+                path="deposit"
+                getComponent={(location, cb) => {
+                    import("components/Account/Deposit/Index")
+                        .then(loadRoute(cb))
+                        .catch(errorLoading);
+                }}
+            />
+            <Route
                 path="activenodes"
                 getComponent={(location, cb) => {
                     import("components/Account/AccountActivenodes")
@@ -663,6 +671,31 @@ const routes = (
             <Redirect from="dashboard" to="/account/:account_name" />
             <Redirect from="orders" to="/account/:account_name" />
         </Route>
+        <Route
+            path="/deposit/new"
+            getComponents={(location, cb) => {
+                Promise.all([
+                    import("components/Layout/Header"),
+                    import("components/Layout/Sidebar"),
+                    import("components/Account/Deposit")
+                ])
+                    .then(loadMultiComponentsRoute(cb))
+                    .catch(errorLoading);
+            }}
+        />
+        <Route
+            path="/withdraw/new"
+            getComponents={(location, cb) => {
+                Promise.all([
+                    import("components/Layout/Header"),
+                    import("components/Layout/Sidebar"),
+                    import("components/Account/withdraw"),
+                    import("components/Layout/Footer")
+                ])
+                    .then(loadMultiComponentsRoute(cb))
+                    .catch(errorLoading);
+            }}
+        />
         <Route
             path="deposit-withdraw"
             getComponents={(location, cb) => {
