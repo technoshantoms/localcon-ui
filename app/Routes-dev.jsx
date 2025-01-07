@@ -35,7 +35,7 @@ import AccountPermissions from "./components/Account/AccountPermissions";
 import AccountWhitelist from "./components/Account/AccountWhitelist";
 
 //import Bots from "./components/Bots/Bots";
-import ListingPage from "./components/Listing/ListingPage";
+// import ListingPage from "./components/Listing/ListingPage";
 import AccountVoting from "./components/Account/AccountVoting";
 import AccountActivenodes from "./components/Account/AccountActivenodes";
 import OTC from "./components/OTC/OTC";
@@ -236,7 +236,7 @@ const routes = (
                 footerBlock: Footer
             }}
         />
-        <Route
+       {/* <Route
             path="ListingPage"
             component={{
                 headerBlock: Header,
@@ -244,7 +244,7 @@ const routes = (
                 contentBlock: ListingPage,
                 footerBlock: Footer
             }}
-        />
+        />*/}
 
        {/* <Route
             path="Bots"
