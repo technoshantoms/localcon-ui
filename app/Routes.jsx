@@ -583,9 +583,9 @@ const routes = (
             {/* <Route path="dashboard" getComponent={(location, cb) => {
                 import("components/Account/AccountOverview").then(loadRoute(cb)).catch(errorLoading);
             }}/> */}
-            {/* <Route path="deposit-withdraw" getComponent={(location, cb) => {
+           <Route path="deposit-withdraw" getComponent={(location, cb) => {
                 import("components/Account/AccountDepositWithdraw").then(loadRoute(cb)).catch(errorLoading);
-            }}/> */}
+            }}/> 
             {/* <Route path="orders" getComponent={(location, cb) => {
                 import("components/Account/AccountOrders").then(loadRoute(cb)).catch(errorLoading);
             }}/> */}
@@ -676,7 +676,6 @@ const routes = (
         </Route>
        {/*
         <Route
-<<<<<<< HEAD
             path="/deposit/new"
             getComponents={(location, cb) => {
                 Promise.all([
@@ -704,8 +703,6 @@ const routes = (
        */} 
        
         <Route
-=======
->>>>>>> parent of a766d45 (htlc-gateway)
             path="deposit-withdraw"
             getComponents={(location, cb) => {
                 Promise.all([
