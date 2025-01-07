@@ -1,10 +1,7 @@
 [# receive]
-### Crypto & fiat bridge
-### Deposit to [bank](/deposit/new) 
-
-
-### Withdraw from [bank](/withdraw/new)
+### Receiving LLC
+In order to receive LLC from another person or from an exchange, simply give them your account name: **{account}**
 
 [# deposit-short]
-### Depositing using bank credit card
-If you want to deposit using your ATM please note that a 3-Party procedure will be followed via an SMS sent to your mobile number. Subsequent transactions will be on a Combination of 2-Party & 3-Party card methods. Use this bank gateway service to do so.
+### Depositing or withdrawing coins
+If you want to deposit or withdraw funds, either in fiat or from other blockchains, you may use a [bridge](introduction/bridges_gateways) or [gateway](introduction/bridges_gateways) service to do so.

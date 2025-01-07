@@ -4,10 +4,10 @@ import {Signature, ChainStore, PublicKey} from "bitsharesjs/es";
 import WalletUnlockActions from "actions/WalletUnlockActions";
 import WalletDb from "stores/WalletDb";
 
-const MSG_HEAD = "-----BEGIN CLOUDBANK SIGNED MESSAGE-----";
+const MSG_HEAD = "-----BEGIN LOCALCOIN SIGNED MESSAGE-----";
 const MSG_META = "-----BEGIN META-----";
 const MSG_SIGNATURE = "-----BEGIN SIGNATURE-----";
-const MSG_FOOT = "-----END CLOUDBANK SIGNED MESSAGE-----";
+const MSG_FOOT = "-----END LOCALCOIN SIGNED MESSAGE-----";
 const MSG_SENDER = "account";
 const MSG_PUBLICKEY = "memokey";
 const MSG_BLOCK = "block";
@@ -18,7 +18,7 @@ const MSG_DATE = "timestamp";
  *    - Verify a given message
  *
  *  The message format that is underlying is as follows:
- *  -----BEGIN CLOUDBANK SIGNED MESSAGE-----
+ *  -----BEGIN LOCALCOIN SIGNED MESSAGE-----
  *  <message from the account>
  *  -----BEGIN META-----
  *  account=<account name>
@@ -27,7 +27,7 @@ const MSG_DATE = "timestamp";
  *  timestamp=<current time>
  *  -----BEGIN SIGNATURE-----
  *  <signature>
- *  -----END CLOUDBANK SIGNED MESSAGE-----
+ *  -----END LOCALCOIN SIGNED MESSAGE-----
  *
  *    @author Stefan Schiessl <stefan.schiessl@blockchainprojectsbv.com>
  */
