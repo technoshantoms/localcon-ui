@@ -2,7 +2,7 @@ import React from "react";
 
 import {DonutChart} from "./DonutChart";
 import SendModal from "./DonateSendModal";
-import {Button} from "bitshares-ui-style-guide";
+// import {Button} from "bitshares-ui-style-guide";
 
 import SettingsStore from "../../stores/SettingsStore";
 import {connect} from "alt-react";

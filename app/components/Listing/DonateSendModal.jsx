@@ -9,7 +9,7 @@ import AccountSelectorListing from "./AccountSelectorListing";
 import FeeAssetSelector from "../Utility/FeeAssetSelector";
 import counterpart from "counterpart";
 import {isNaN} from "lodash-es";
-import {Form, Modal, Button, Tooltip, Input} from "bitshares-ui-style-guide";
+// import {Form, Modal, Button, Tooltip, Input} from "bitshares-ui-style-guide";
 import BalanceComponent from "../Utility/BalanceComponent";
 import {getWalletName} from "../../branding";
 import {Asset} from "../../lib/common/MarketClasses";

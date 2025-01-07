@@ -19,14 +19,14 @@ import Icon from "../Icon/Icon";
 import accountUtils from "common/account_utils";
 import cnames from "classnames";
 import PropTypes from "prop-types";
-import {
-    Tooltip,
-    Button,
-    Input,
-    Icon as AntIcon,
-    Select,
-    Form
-} from "bitshares-ui-style-guide";
+// import {
+//     Tooltip,
+//     Button,
+//     Input,
+//     Icon as AntIcon,
+//     Select,
+//     Form
+// } from "bitshares-ui-style-guide";
 
 import AccountSelector from "../Account/AccountSelector";
 

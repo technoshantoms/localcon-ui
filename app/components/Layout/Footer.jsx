@@ -15,6 +15,7 @@ import "intro.js/introjs.css";
 import guide from "intro.js";
 import PropTypes from "prop-types";
 import AccountStore from "stores/AccountStore";
+//import CookiesPopup from "./CookiesPopup/CookiesPopup";
 
 class Footer extends React.Component {
     static propTypes = {
@@ -221,15 +222,7 @@ class Footer extends React.Component {
                     </div>
                     <div className="footer-right">
                         <Social />
-                      {/*
-                       <button
-                            className="btn large inverted flat support-btn"
-                            type="button"
-                            onClick={this.chatToggle.bind(this)}
-                        >
-                          Chat
-                        </button>
-                      */}  
+                      {/*<CookiesPopup></CookiesPopup> */}
                         <div
                             className="footer-info"
                             onClick={() => {

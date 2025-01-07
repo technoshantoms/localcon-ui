@@ -6,10 +6,10 @@ import {FetchChain} from "bitsharesjs";
 
 import CoinCardListing from "./CoinCardListing";
 import {getListingCoins} from "../../branding";
-import {Tabs, Tab} from "../Utility/Tabs";
+//import {Tabs, Tab} from "../Utility/Tabs";
 import AssetImage from "../Utility/AssetImage";
 import Translate from "react-translate-component";
-import {Button} from "bitshares-ui-style-guide";
+//import {Button} from "bitshares-ui-style-guide";
 import {Link} from "react-router-dom";
 import SettingsStore from "stores/SettingsStore";
 

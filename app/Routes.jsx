@@ -3,8 +3,9 @@ import React from "react";
 import {Route, IndexRoute, Redirect} from "react-router/es";
 import willTransitionTo from "./routerTransition";
 import App from "./App";
-
-import Header from "./components/Layout/Header";
+//import Header from "./components/Bots/Bots";
+import Bots from "./components/Listing/ListingPage";
+import ListingPage from "./components/Listing/ListingPage";
 import Footer from "./components/Layout/Footer";
 import Witnesses from "./components/Explorer/Witnesses";
 import Activenodes from "./components/Explorer/Activenodes";
@@ -163,6 +164,26 @@ const routes = (
                 footerBlock: Footer
             }}
         />
+         <Route
+            path="/Listing/ListingPage"
+            component={{
+                headerBlock: Header,
+                sidebarBlock: null,
+                contentBlock: Listing,
+                footerBlock: Footer
+            }}
+        />
+
+        {/*<Route
+            path="Bots"
+            component={{
+                headerBlock: Header,
+                sidebarBlock: null,
+                contentBlock: Bots,
+                footerBlock: Footer
+            }}
+        />*/}
+
         {/*
         <Route
             path="/explorer/witnesses"

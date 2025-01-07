@@ -136,22 +136,22 @@ export const settingsAPIs = {
             url: "ws://localhost:8090/ws",
             location: "Locally hosted"
         },
-        {
+          {
             url: WS_NODE_LIST_URL_NODE1,
-            location: "R-Squared Labs LLC node",
+            location: "CloudBank Labs LLC node",
             region: "Northern America",
             country: "USA"
         },
         {
             url: WS_NODE_LIST_URL_NODE2,
-            location: "R-Squared Labs LLC node",
+            location: "LocalBank LLC node",
             region: "Asia",
             country: "India"
         },
         {
             url: WS_NODE_LIST_URL_NODE3,
-            location: "R-Squared Labs LLC node",
-            region: "Northern America",
+            location: "CloudBank Labs LLC node",
+            region: "Africa America",
             country: "USA"
         }
     ],

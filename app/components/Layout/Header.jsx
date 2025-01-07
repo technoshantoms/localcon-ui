@@ -799,6 +799,20 @@ class Header extends React.Component {
                                         <a
                                             className="mobile__list__link"
                                             href="#"
+                                            onClick={this._showSend.bind(this)}
+                                        >
+                                            {/* модалка */}
+                                            {counterpart.translate(
+                                                "header.listing"
+                                            )}
+                                        </a>
+                                    </li>
+                                }
+                                {
+                                    <li className="mobile__list__item">
+                                        <a
+                                            className="mobile__list__link"
+                                            href="#"
                                             onClick={this._onNavigate.bind(
                                                 this,
                                                 "/account/" + currentAccount

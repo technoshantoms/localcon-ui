@@ -33,6 +33,25 @@ export function getWalletURL() {
     return "https://wallet.localcoin.is";
 }
 
+/*
+These are the default coins that are displayed with the images
+ */
+export function getImageName(symbol) {
+    if (symbol.startsWith("CBANK.")) return symbol;
+    if (
+        get_allTokens().nativeTokens.indexOf(symbol) !== -1 ||
+        symbol == "CNY" ||
+        symbol == "DEXBOT" ||
+        symbol == "LANDLORD"
+    )
+        return symbol;
+
+    return "unknown";
+
+    //let imgName = symbol.split(".");
+    //return imgName.length === 2 ? imgName[1] : imgName[0];
+}
+
 /**
  * Returns faucet information
  *
