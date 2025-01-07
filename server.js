@@ -35,7 +35,7 @@ app.use(
 app.use(hotMiddleware(compiler));
 
 app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "app/assets/index.html"));
+    res.sendFile(path.join(__dirname, "app/assets/index-dev.html"));
 });
 
 var options = {
