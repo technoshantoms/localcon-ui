@@ -12,7 +12,6 @@ import willTransitionTo from "./routerTransition";
 import App from "./App";
 
 // Components imported here for react hot loader (does not work with async route loading)
-//import {BodyClassName, Notification} from "bitshares-ui-style-guide";
 import DashboardPage from "./components/Dashboard/DashboardPage";
 import DashboardAccountsOnly from "./components/Dashboard/DashboardAccountsOnly";
 import Witnesses from "./components/Explorer/Witnesses";
@@ -33,9 +32,6 @@ import AccountVesting from "./components/Account/AccountVesting";
 import AccountDepositWithdraw from "./components/Account/AccountDepositWithdraw";
 import AccountPermissions from "./components/Account/AccountPermissions";
 import AccountWhitelist from "./components/Account/AccountWhitelist";
-
-//import Bots from "./components/Bots/Bots";
-// import ListingPage from "./components/Listing/ListingPage";
 import AccountVoting from "./components/Account/AccountVoting";
 import AccountActivenodes from "./components/Account/AccountActivenodes";
 import OTC from "./components/OTC/OTC";
@@ -121,7 +117,6 @@ const routes = (
                 footerBlock: Footer
             }}
         />
-
         <Route
             path="/explorer/blocks"
             component={{
@@ -236,25 +231,6 @@ const routes = (
                 footerBlock: Footer
             }}
         />
-       {/* <Route
-            path="ListingPage"
-            component={{
-                headerBlock: Header,
-                sidebarBlock: null,
-                contentBlock: ListingPage,
-                footerBlock: Footer
-            }}
-        />*/}
-
-       {/* <Route
-            path="Bots"
-            component={{
-                headerBlock: Header,
-                sidebarBlock: null,
-                contentBlock: Bots,
-                footerBlock: Footer
-            }}
-        />*/}
         <Route
             path="transfer"
             components={{

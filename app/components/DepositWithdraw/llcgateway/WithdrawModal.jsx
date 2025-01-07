@@ -400,8 +400,8 @@ class WithdrawModal extends React.Component {
                                                 disabled
                                                 type="text"
                                                 tabIndex={2}
-                                                defaultValue={fee + " CBANK"}
-                                                value={fee + " CBANK"}
+                                                defaultValue={fee + " LLC"}
+                                                value={fee + " LLC"}
                                             />
                                             <div className="form-label select floating-dropdown" />
                                         </div>

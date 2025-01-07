@@ -327,7 +327,7 @@ class WithdrawModalNew extends React.Component {
         let isLLC = false;
         if (coreAsset) {
             if (selectedAsset == coreAsset.get("symbol")) isLLC = true;
-        } else if (selectedAsset == "CBANK") {
+        } else if (selectedAsset == "LLC") {
             isLLC = true;
         }
 
@@ -556,7 +556,7 @@ class WithdrawModalNew extends React.Component {
 
         let stateObj = {};
 
-        if (value == "CBANK") {
+        if (value == "LLC") {
             stateObj = {isLLC: true};
         }
 

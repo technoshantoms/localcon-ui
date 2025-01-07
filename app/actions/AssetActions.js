@@ -155,7 +155,7 @@ class AssetActions {
                     },
                     quote: {
                         amount: cer.quote.amount * precision,
-                        asset_id: "1.3.2"
+                        asset_id: "1.3.1"
                     }
                 },
                 whitelist_authorities: [],
