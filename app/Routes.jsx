@@ -635,14 +635,14 @@ const routes = (
                         .catch(errorLoading);
                 }}
             />
-            <Route
+            {/*<Route
                 path="deposit"
                 getComponent={(location, cb) => {
                     import("components/Account/Deposit/Index")
                         .then(loadRoute(cb))
                         .catch(errorLoading);
                 }}
-            />
+            />*/}
             <Route
                 path="activenodes"
                 getComponent={(location, cb) => {
@@ -671,7 +671,7 @@ const routes = (
             <Redirect from="dashboard" to="/account/:account_name" />
             <Redirect from="orders" to="/account/:account_name" />
         </Route>
-        <Route
+        {/*<Route
             path="/deposit/new"
             getComponents={(location, cb) => {
                 Promise.all([
@@ -682,8 +682,8 @@ const routes = (
                     .then(loadMultiComponentsRoute(cb))
                     .catch(errorLoading);
             }}
-        />
-        <Route
+        />*/}
+        {/*<Route
             path="/withdraw/new"
             getComponents={(location, cb) => {
                 Promise.all([
@@ -695,7 +695,7 @@ const routes = (
                     .then(loadMultiComponentsRoute(cb))
                     .catch(errorLoading);
             }}
-        />
+        />*/}
         <Route
             path="deposit-withdraw"
             getComponents={(location, cb) => {
