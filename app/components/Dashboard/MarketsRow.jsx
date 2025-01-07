@@ -101,9 +101,9 @@ class MarketsRow extends React.Component {
         function getImageName(asset) {
             let symbol = asset.get("symbol");
             if (
-                symbol === "OPEN.BTC" ||
-                symbol === "GDEX.BTC" ||
-                symbol === "RUDEX.BTC"
+                symbol === "OPEN.KSH" ||
+                symbol === "OPEN.GOLD" ||
+                symbol === "OPEN.USD"
             )
                 return symbol;
             let imgName = asset.get("symbol").split(".");

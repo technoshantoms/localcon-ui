@@ -70,7 +70,7 @@ class MarketRow extends React.Component {
         }
 
         let smartCoinArr = getSmartCoinMarkets();
-        let exeptionArr = ["USDT", "EURT", "TUSD", "USDC", "USDS"];
+        let exeptionArr = ["USD", "EUR", "USD", "USDC", "USDS"];
         let marketID = base.get("symbol") + "_" + quote.get("symbol");
         let reversePairs = false;
         // 1. базовая валюта всегда слева;

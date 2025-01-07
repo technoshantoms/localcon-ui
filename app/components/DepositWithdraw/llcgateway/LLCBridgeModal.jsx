@@ -176,15 +176,15 @@ class LLCBridgeModal extends React.Component {
         switch (bullet) {
             case "BTC":
                 return 2;
-            case "LTC":
+            case "USD":
                 return 6;
-            case "DASH":
+            case "EUR":
                 return 6;
-            case "USDT":
+            case "CNY":
                 return 2;
             case "ETH":
                 return 6;
-            case "XMR":
+            case "GOLD":
                 return 10;
         }
 
@@ -570,7 +570,7 @@ class LLCBridgeModal extends React.Component {
                         onChange={this.handleReceiveInput}
                         defaultValue={1000}
                     />
-                    <div className="input-right-symbol">LLC</div>
+                    <div className="input-right-symbol">CBANK</div>
                 </div>
             </div>
         );
@@ -655,7 +655,7 @@ class LLCBridgeModal extends React.Component {
                         }}
                         content="gateway.purchase_notice"
                         inputAsset={this.state.asset}
-                        outputAsset="LLC"
+                        outputAsset="CBANK"
                     />
                     <div className="modal__highlight bridge_modal_address">
                         {this.state.address}
@@ -680,7 +680,7 @@ class LLCBridgeModal extends React.Component {
                                         {counterpart.translate(
                                             "exchange.buy"
                                         )}{" "}
-                                            LLC
+                                            CBANK
                                     </span>
                                 </h3>
                             </div>
@@ -834,8 +834,8 @@ class LLCBridgeModal extends React.Component {
                                             disabled
                                             type="text"
                                             tabIndex={2}
-                                            defaultValue={fee + " LLC"}
-                                            value={fee + " LLC"}
+                                            defaultValue={fee + " CBANK"}
+                                            value={fee + " CBANK"}
                                         />
                                         <div className="form-label select floating-dropdown" />
                                     </div>

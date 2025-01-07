@@ -10,10 +10,6 @@ import ZfApi from "react-foundation-apps/src/utils/foundation-api";
 import SendModal from "../../components/Modal/SendModal";
 import FormattedAsset from "../../components/Utility/FormattedAsset";
 
-//HTLC BRIDGE
-// import Deposit from "./components/Account/Deposit/Index";
-// import Withdraw from "./components/Account/Withdraw/Index";
-
 import DepositModal from "../../components/Modal/DepositModal";
 import GatewayStore from "stores/GatewayStore";
 import Icon from "../../components/Icon/Icon";
@@ -73,14 +69,6 @@ class SettingsMenuUnWrapped extends React.Component {
             {
                 label: "header.explorer",
                 path: "/explorer/blocks"
-            },
-            {
-                label: "header.help",
-                path: "/deposit/new"
-            },
-            {
-                label: "header.help",
-                path: "/withdraw/new"
             },
             {
                 label: "header.help",

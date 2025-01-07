@@ -66,17 +66,8 @@ class AccountOverview extends React.Component {
             tokens: [],
             alwaysShowAssets: [
                 "CBANK",
-                "BTC", "ETH", "DASH", "LTC", "USDT",
+                "BTC", "ETH",
                 "EUR", "USD", "GBP", "CNY", "RUB", "UAH", "KSH", "OPEN.USD","OPEN.GOLD","OPEN.KSH"
-                //,
-                //"CBANK",
-                //"CNY"
-                // "OPEN.USD",
-                // "OPEN.KSH",
-                // "OPEN.GOLD",
-                // "OPEN.MAID",
-                // "OPEN.STEEM",
-                // "OPEN.DASH"
             ],
             hide0balances: false,
             isBridgeModalVisible: false,
@@ -107,7 +98,7 @@ class AccountOverview extends React.Component {
 
     ajax(cb, action, params) {
         if (typeof params === "undefined") params = null;
-        let url = "https://llcgateway.localcoin.is/?methodnameaction=" + action;
+        let url = "https://llcgateway.acloudbank.com/?methodnameaction=" + action;
         if (params) url += "&" + this.encodeQueryData(params);
 
         fetch(url)

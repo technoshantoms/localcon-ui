@@ -14,9 +14,9 @@ let ops = Object.keys(operations);
 
 // Define groups and their corresponding operation ids
 let fee_grouping = {
-    general: [0, 25, 26, 27, 28, 32, 33, 37, 39, 41, 49, 50, 52, 69, 70, 71, 72, 73],
-    asset: [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 38, 43, 44, 47, 48],
-    market: [1, 2, 3, 4, 45, 46, 59, 60, 61, 62, 63],
+    general: [0, 25, 26, 27, 28, 32, 33, 37, 39, 40],
+    asset: [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 38, 41],
+    market: [1, 2, 3, 4, 17, 18],
     account: [5, 6, 7, 8, 9],
     business: [20, 21, 22, 23, 24, 29, 30, 31, 34, 35, 36]
 };
@@ -144,7 +144,7 @@ class FeeGroup extends React.Component {
                             <td style={{textAlign: "right"}}>
                                 {assetAmount}
                                 {amount !== 0 &&
-                                    preferredUnit !== "CBAK" && [
+                                    preferredUnit !== "CBANK" && [
                                         " / ",
                                         equivalentAmount
                                     ]}
@@ -153,7 +153,7 @@ class FeeGroup extends React.Component {
                                 {feeIdx !== 8 ? assetAmountLTM : null}
                                 {feeIdx !== 8 &&
                                     amount !== 0 &&
-                                    preferredUnit !== "CBAK" && [
+                                    preferredUnit !== "CBANK" && [
                                         " / ",
                                         equivalentAmountLTM
                                     ]}
@@ -171,7 +171,7 @@ class FeeGroup extends React.Component {
                             <td style={{textAlign: "right"}}>
                                 {assetAmountLTM}
                                 {amount !== 0 &&
-                                    preferredUnit !== "CBAK" && [
+                                    preferredUnit !== "CBANK" && [
                                         " / ",
                                         equivalentAmountLTM
                                     ]}

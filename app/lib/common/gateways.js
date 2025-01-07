@@ -6,12 +6,13 @@
 import {
 //    rudexAPIs,
 //    widechainAPIs,
-    openledgerAPIs
+ //   openledgerAPIs
 //    cryptoBridgeAPIs,
 //    gdex2APIs
 } from "api/apiConfig";
     
 export const availableGateways = {
+    /*
         OPEN: {
             id: "OPEN",
             name: "OPENLEDGER",
@@ -23,7 +24,7 @@ export const availableGateways = {
                 selected: false
             }
         }
-/* 
+ 
         RUDEX: {
             id: "RUDEX",
             name: "RUDEX",

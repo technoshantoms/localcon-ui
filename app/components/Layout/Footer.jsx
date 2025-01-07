@@ -328,7 +328,6 @@ class Social extends Component {
         let socialArr = [
             { item: "btc", href: "https://bitcointalk.org/index.php?topic=5125670", img: "btc" },
             { item: "vk", href: "https://org.acloudbank.com/mobile-android", img: "vk" },
-             { item: "vk", href: "https://org.acloudbank.com/mobile-android", img: "vk" },
             { item: "discord", href: "https://discord.gg/vzxSzYN", img: "s-584" },
         ];
 

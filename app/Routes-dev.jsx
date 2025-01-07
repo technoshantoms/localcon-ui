@@ -33,10 +33,6 @@ import AccountDepositWithdraw from "./components/Account/AccountDepositWithdraw"
 import AccountPermissions from "./components/Account/AccountPermissions";
 import AccountWhitelist from "./components/Account/AccountWhitelist";
 
-//HTLC GATEWAY
-// import Deposit from "./components/Account/Deposit/Index";
-// import Withdraw from "./components/Account/Withdraw/Index";
-
 import AccountVoting from "./components/Account/AccountVoting";
 import AccountActivenodes from "./components/Account/AccountActivenodes";
 import OTC from "./components/OTC/OTC";

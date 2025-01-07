@@ -636,14 +636,6 @@ const routes = (
                 }}
             />
             <Route
-                path="deposit"
-                getComponent={(location, cb) => {
-                    import("components/Account/Deposit/Index")
-                        .then(loadRoute(cb))
-                        .catch(errorLoading);
-                }}
-            />
-            <Route
                 path="activenodes"
                 getComponent={(location, cb) => {
                     import("components/Account/AccountActivenodes")
@@ -671,6 +663,7 @@ const routes = (
             <Redirect from="dashboard" to="/account/:account_name" />
             <Redirect from="orders" to="/account/:account_name" />
         </Route>
+       {/*
         <Route
             path="/deposit/new"
             getComponents={(location, cb) => {
@@ -696,6 +689,8 @@ const routes = (
                     .catch(errorLoading);
             }}
         />
+       */} 
+       
         <Route
             path="deposit-withdraw"
             getComponents={(location, cb) => {

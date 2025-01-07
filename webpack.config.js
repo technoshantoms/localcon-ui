@@ -85,38 +85,6 @@ module.exports = function(env) {
             { from: path.join(root_dir, "autodeploy-dev.php"), to: "" }
         ])
     ];
-    if (env.hash)
-        plugins.push(
-            new CopyWebpackPlugin({
-                patterns: [
-                    {
-                        from: path.join(
-                            root_dir,
-                            "app",
-                            "components",
-                            "DepositWithdraw",
-                            "blocktrades",
-                            "index.html"
-                        ),
-                        to: path.join(
-                            outputPath,
-                            "deposit-withdraw",
-                            "index.html"
-                        ),
-                        toType: "file"
-                    }
-                ]
-            })
-        );
-    var alias = {
-        sanitize$: "xss",
-        moment$: path.resolve(root_dir, "node_modules/moment/moment.js"),
-        bitsharesjs$: path.resolve(root_dir, "node_modules/bitsharesjs/"),
-        "bitshares-ui-style-guide$": path.resolve(
-            root_dir,
-            "node_modules/bitshares-ui-style-guide/dist/main.js"
-        )
-    };
     if (env.prod) {
         // PROD OUTPUT PATH
         let outputDir = env.electron
@@ -360,8 +328,7 @@ module.exports = function(env) {
                 path.resolve(root_dir, "app/lib"),
                 "node_modules"
             ],
-            extensions: [".ts", ".tsx", ".js", ".jsx", ".coffee", ".json"],
-
+            extensions: [".js", ".jsx", ".coffee", ".json"]
         },
         plugins: plugins
     };

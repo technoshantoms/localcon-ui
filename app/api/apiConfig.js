@@ -1,7 +1,7 @@
 import {getFaucet, getTestFaucet} from "../branding";
 import {
     EES_BASE_URL,
-    RECAPTCHA_KEY,
+    //RECAPTCHA_KEY,
     REGISTRATION_SERVICE_BASE_URL,
     DEFAULT_WS_NODE,
     WS_NODE_LIST_URL_NODE1,
@@ -130,18 +130,22 @@ export const nodeRegions = [
 export const settingsAPIs = {
     // If you want a location to be translated, add the translation to settings in locale-xx.js
     // and use an object {translate: key} in WS_NODE_LIST
-    DEFAULT_WS_NODE,
+    DEFAULT_WS_NODE: DEFAULT_WS_NODE,
     WS_NODE_LIST: [
         {
+            url: "ws://localhost:8090/ws",
+            location: "Locally hosted"
+        },
+        {
             url: WS_NODE_LIST_URL_NODE1,
-            location: "AcloudBank LLC node",
+            location: "R-Squared Labs LLC node",
             region: "Northern America",
             country: "USA"
         },
         {
             url: WS_NODE_LIST_URL_NODE2,
-            location: "Jiangshu Main node",
-            region: "China",
+            location: "R-Squared Labs LLC node",
+            region: "Asia",
             country: "India"
         },
         {
@@ -149,10 +153,6 @@ export const settingsAPIs = {
             location: "R-Squared Labs LLC node",
             region: "Northern America",
             country: "USA"
-        },
-        {
-            url: "ws://localhost:8090",
-            location: "Locally hosted"
         }
     ],
     ES_WRAPPER_LIST: [],

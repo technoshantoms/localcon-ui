@@ -1,8 +1,21 @@
-/** This file centralized customization and branding efforts throughout the whole wallet and is meant to facilitate
- *  the process.
+import {Apis} from "bitsharesjs-ws";
+
+/**
+ * This file centralized customization and branding efforts throughout the whole wallet and is meant to facilitate
+ * the process.
  *
  *  @author Stefan Schiessl <stefan.schiessl@blockchainprojectsbv.com>
  */
+
+function _isTestnet() {
+    const testnet =
+        "8b9c8d3e9ea22baea4093a5a0f96f63926f9de8c355b672d83c32fab394f743e"; // just for the record
+    const mainnet =
+        "e1605132ecd5ffdf8635b2432d3b6df35d0a0b18572b5120e82acb132c02d6a1";
+
+    // treat every other chain as testnet
+    return Apis.instance().chain_id !== mainnet;
+}
 
 /**
  * Wallet name that is used throughout the UI and also in translations
@@ -99,58 +112,90 @@ export function getMyMarketsQuotes() {
     let tokens = {
         nativeTokens: [
                 "CBANK", "USDT", "BTC", "XMR", "ETH", "LTC", "DASH", "LINK", "USDC", "TUSD", "USDS", "EURS", "HT", "BAT", "SNT", "OMG", "LAMB", "ZB", "HT", "DAI", "ZRX", "USD", "EUR", "CNY", "RUB", "BRL", "GBP", "AUD", "UAH", "TRY", "PLN", "NGN", "KRW", "JPY", "IDR", "VND", "INR", "CTK"
-            ],
-        gdexTokens: [
-            "GDEX.BTC",
-            "GDEX.BTO",
-            "GDEX.EOS",
-            "GDEX.ETH",
-            "GDEX.BKBT",
-            "GDEX.GXC",
-            "GDEX.SEER",
-            "GDEX.FOTA",
-            "GDEX.JRC",
-            "GDEX.EOSDAC",
-            "GDEX.MTS",
-            "GDEX.GUSD",
-            "GDEX.IQ",
-            "GDEX.NULS",
-            "GDEX.USDT"
-             ],
-        openledgerTokens: ["OPEN.USD", "OPEN.KSH", "OPEN.GOLD"],
-        rudexTokens: [],
-        xbtsxTokens: [
-            "XBTSX.STH",
-            "XBTSX.POST",
-            "XBTSX.DOGE",
-            "XBTSX.BTC",
-            "XBTSX.BTG",
-            "XBTSX.BCH",
-            "XBTSX.LTC",
-            "XBTSX.DASH",
-            "XBTSX.NVC",
-            "XBTSX.UNI",
-            "XBTSX.NMC",
-            "XBTSX.WAVES",
-            "XBTSX.COF",
-            "XBTSX.MDL",
-            "XBTSX.ETH",
-            "XBTSX.EXR",
-            "XBTSX.USDT",
-            "XBTSX.TUSD",
-            "XBTSX.USDC",
-            "XBTSX.USDN",
-            "XBTSX.USD",
-            "XBTSX.RUB",
-            "XBTSX.EUR",
-            "XBTSX.ATRI",
-            "XBTSX.FIL",
-            "XBTSX.EOS",
-            "XBTSX.BAT"
-        ],
-        honestTokens: ["HONEST.BTC", "HONEST.USD"],
-        ioxbankTokens: ["IOB.XRP"],
-        otherTokens: ["CVCOIN", "HERO", "OCT", "HERTZ", "YOYOW"]
+            ]
+            //     "GOLD",
+            //     "KRW",
+            //     "RUBLE",
+            //     "SILVER"
+            // ],
+            // bridgeTokens: ["BRIDGE.BCO", "BRIDGE.BTC", "BRIDGE.MONA", "BRIDGE.ZNY"],
+            // gdexTokens: ["GDEX.BTC", "GDEX.BTO", "GDEX.EOS", "GDEX.ETH"],
+            // openledgerTokens: [
+            //     "OBITS",
+            //     "OPEN.BTC",
+            //     "OPEN.DASH",
+            //     "OPEN.DGD",
+            //     "OPEN.DOGE",
+            //     "OPEN.EOS",
+            //     "OPEN.EOSDAC",
+            //     "OPEN.ETH",
+            //     "OPEN.EURT",
+            //     "OPEN.GAME",
+            //     "OPEN.GRC",
+            //     "OPEN.INCNT",
+            //     "OPEN.KRM",
+            //     "OPEN.LISK",
+            //     "OPEN.LTC",
+            //     "OPEN.MAID",
+            //     "OPEN.MKR",
+            //     "OPEN.NEO",
+            //     "OPEN.OMG",
+            //     "OPEN.SBD",
+            //     "OPEN.STEEM",
+            //     "OPEN.TUSD",
+            //     "OPEN.USDT",
+            //     "OPEN.WAVES",
+            //     "OPEN.XMR",
+            //     "OPEN.ZEC",
+            //     "OPEN.ZRX"
+            // ],
+            // rudexTokens: [
+            //     "PPY",
+            //     "RUDEX.DCT",
+            //     "RUDEX.DGB",
+            //     "RUDEX.GBG",
+            //     "RUDEX.GOLOS",
+            //     "RUDEX.KRM",
+            //     "RUDEX.MUSE",
+            //     "RUDEX.SBD",
+            //     "RUDEX.STEEM",
+            //     "RUDEX.TT"
+            // ],
+            // winTokens: ["WIN.ETC", "WIN.ETH", "WIN.HSR"],
+            // xbtsxTokens: [
+            //     "XBTSX.STH",
+            //     "XBTSX.POST",
+            //     "XBTSX.DOGE",
+            //     "XBTSX.BTC",
+            //     "XBTSX.LTC",
+            //     "XBTSX.DASH",
+            //     "XBTSX.KEC",
+            //     "XBTSX.BCH",
+            //     "XBTSX.BTG",
+            //     "XBTSX.XSPEC",
+            //     "XBTSX.NVC"
+            // ],
+            // otherTokens: [
+            //     "BKT",
+            //     "BLOCKPAY",
+            //     "BTWTY",
+            //     "TWENTIX",
+            //     "BTSR",
+            //     "CADASTRAL",
+            //     "CVCOIN",
+            //     "HEMPSWEET",
+            //     "HERO",
+            //     "HERTZ",
+            //     "ICOO",
+            //     "IOU.CNY",
+            //     "KAPITAL",
+            //     "KEXCOIN",
+            //     "OCT",
+            //     "SMOKE",
+            //     "STEALTH",
+            //     "YOYOW",
+            //     "ZEPH"
+            // ]
     };
 
     let allTokens = [];

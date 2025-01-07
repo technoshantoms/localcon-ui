@@ -12,9 +12,6 @@ import DepositModal from "../../components/Modal/DepositModal";
 import GatewayStore from "stores/GatewayStore";
 import Icon from "../../components/Icon/Icon";
 import Translate from "react-translate-component";
-//HTLC BRIDGE
-// import Deposit from "./components/Account/Deposit/Index";
-// import Withdraw from "./components/Account/Withdraw/Index";
 
 import counterpart from "counterpart";
 import WalletDb from "stores/WalletDb";
@@ -233,33 +230,6 @@ class Sidebar extends React.Component {
                           })
                         : null
                     }
-
-     {/*
-     pending tasks for new deposit or withdraw modules
-     */} 
-
-                    {makeSidebarMenuItem({
-                        title: "account.deposit",
-                        link: `/deposit/new`,
-                        isActive:
-                            active.indexOf(
-                                `/deposit/new`
-                            ) !== -1
-                    })}
-                    {false
-                        ? makeSidebarMenuItem({
-                              title: "account.deposit",
-                              link: `/deposit/new`,
-                              isActive:
-                                  active.indexOf(
-                                      `/deposit/new`
-                                  ) !== -1
-                          })
-                        : null
-                    }
-     {/*
-     pending tasks for new deposit or withdraw modules
-     */} 
 
                     <li
                         className={cnames("sidebar__menu__item expand", {
