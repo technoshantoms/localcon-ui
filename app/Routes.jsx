@@ -310,7 +310,7 @@ const routes = (
                 footerBlock: Footer
             }}
         />
-        <Route
+       {/* <Route
             path="OTC"
             getComponents={(location, cb) => {
                 Promise.all([
@@ -322,7 +322,7 @@ const routes = (
                     .then(loadMultiComponentsRoute(cb))
                     .catch(errorLoading);
             }}
-        />
+        />*/}
         <Route
             path="activenode"
             getComponents={(location, cb) => {
@@ -572,9 +572,9 @@ const routes = (
             {/* <Route path="dashboard" getComponent={(location, cb) => {
                 import("components/Account/AccountOverview").then(loadRoute(cb)).catch(errorLoading);
             }}/> */}
-           <Route path="deposit-withdraw" getComponent={(location, cb) => {
+            {/* <Route path="deposit-withdraw" getComponent={(location, cb) => {
                 import("components/Account/AccountDepositWithdraw").then(loadRoute(cb)).catch(errorLoading);
-            }}/> 
+            }}/> */}
             {/* <Route path="orders" getComponent={(location, cb) => {
                 import("components/Account/AccountOrders").then(loadRoute(cb)).catch(errorLoading);
             }}/> */}
@@ -627,18 +627,10 @@ const routes = (
                         .catch(errorLoading);
                 }}
             />
-            <Route
+            {/*<Route
                 path="voting"
                 getComponent={(location, cb) => {
                     import("components/Account/AccountVoting")
-                        .then(loadRoute(cb))
-                        .catch(errorLoading);
-                }}
-            />
-            {/*<Route
-                path="deposit"
-                getComponent={(location, cb) => {
-                    import("components/Account/Deposit/Index")
                         .then(loadRoute(cb))
                         .catch(errorLoading);
                 }}
@@ -671,31 +663,6 @@ const routes = (
             <Redirect from="dashboard" to="/account/:account_name" />
             <Redirect from="orders" to="/account/:account_name" />
         </Route>
-        {/*<Route
-            path="/deposit/new"
-            getComponents={(location, cb) => {
-                Promise.all([
-                    import("components/Layout/Header"),
-                    import("components/Layout/Sidebar"),
-                    import("components/Account/Deposit")
-                ])
-                    .then(loadMultiComponentsRoute(cb))
-                    .catch(errorLoading);
-            }}
-        />*/}
-        {/*<Route
-            path="/withdraw/new"
-            getComponents={(location, cb) => {
-                Promise.all([
-                    import("components/Layout/Header"),
-                    import("components/Layout/Sidebar"),
-                    import("components/Account/withdraw"),
-                    import("components/Layout/Footer")
-                ])
-                    .then(loadMultiComponentsRoute(cb))
-                    .catch(errorLoading);
-            }}
-        />*/}
         <Route
             path="deposit-withdraw"
             getComponents={(location, cb) => {
@@ -754,7 +721,7 @@ const routes = (
             }}
         />
         <Route
-            path="/help"
+            path="/"
             getComponents={(location, cb) => {
                 Promise.all([
                     import("components/Layout/Header"),

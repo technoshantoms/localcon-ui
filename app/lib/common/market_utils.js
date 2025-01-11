@@ -253,15 +253,15 @@ const MarketUtils = {
 
         if (order.debt) {
             if (invert) {
-                // Price in USD/CBANK, amount should be in CBANK, value should be in USD, debt is in USD
-                // buy is in USD, sell is in CBANK
-                // quote is USD, base is CBANK
+                // Price in USD/LLC, amount should be in LLC, value should be in USD, debt is in USD
+                // buy is in USD, sell is in LLC
+                // quote is USD, base is LLC
                 value = order.debt / quotePrecision;
                 amount = this.limitByPrecision(value / price.full, base);
             } else {
-                // Price in CBANK/USD, amount should be in USD, value should be in CBANK, debt is in USD
-                // buy is in USD, sell is in CBANK
-                // quote is USD, base is CBANK
+                // Price in LLC/USD, amount should be in USD, value should be in LLC, debt is in USD
+                // buy is in USD, sell is in LLC
+                // quote is USD, base is LLC
 
                 amount = this.limitByPrecision(
                     order.debt / quotePrecision,

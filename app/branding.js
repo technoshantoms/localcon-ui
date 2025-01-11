@@ -9,7 +9,7 @@
  * @returns {string}
  */
 export function getWalletName() {
-    return "Cloud Bank";
+    return "CloudBank";
 }
 
 /**
@@ -17,7 +17,7 @@ export function getWalletName() {
  * @returns {string}
  */
 export function getWalletURL() {
-    return "https://wallet.localcoin.is";
+    return "https://wallet.acloudbank.is";
 }
 
 /**
@@ -27,7 +27,7 @@ export function getWalletURL() {
  */
 export function getFaucet() {
     return {
-        url: "https://tapin.localcoin.is/", // 2017-12-infrastructure worker proposal
+        url: "https://tapin.acloudbank.is/", // 2017-12-infrastructure worker proposal
         show: true,
         editable: false
     };
@@ -59,22 +59,13 @@ export function getDefaultLogin() {
     return "password";
 }
 
-export function getTestFaucet() {
-    // fixme should be solved by introducing _isTestnet into getFaucet and fixing the mess in the Settings when fetching faucet address
-    return {
-        url: "http://localhost:48887", // operated as a contribution by BitShares EU
-        show: true,
-        editable: false
-    };
-}
-
 /**
  * Default units used by the UI
  *
  * @returns {[string,string,string,string,string,string]}
  */
-export function getUnits(chainId = "e1605132") {
-    if (chainId === "e1605132")
+export function getUnits(chainId = "806101b8") {
+    if (chainId === "806101b8")
         return ["BTS", "USD", "CNY", "BTC", "EUR", "GBP", "RUB", "CBANK", "ETH", "XMR", "DASH", "LTC", "USDT", "RUB", "UAH"];
     else if (chainId === "39f5e2ed") return ["TEST"];
 }
@@ -89,7 +80,6 @@ export function getMyMarketsBases() {
     return ["CBANK", "ETH", "BTC", "LTC", "XMR", "DASH", "BAT", "USDT", "LINK", "USDC", "TUSD", "USDS", "RUB"];
 }
 
- 
 /**
  * These are the default quotes that are shown after selecting a base
  *
@@ -99,58 +89,90 @@ export function getMyMarketsQuotes() {
     let tokens = {
         nativeTokens: [
                 "CBANK", "USDT", "BTC", "XMR", "ETH", "LTC", "DASH", "LINK", "USDC", "TUSD", "USDS", "EURS", "HT", "BAT", "SNT", "OMG", "LAMB", "ZB", "HT", "DAI", "ZRX", "USD", "EUR", "CNY", "RUB", "BRL", "GBP", "AUD", "UAH", "TRY", "PLN", "NGN", "KRW", "JPY", "IDR", "VND", "INR", "CTK"
-            ],
-        gdexTokens: [
-            "GDEX.BTC",
-            "GDEX.BTO",
-            "GDEX.EOS",
-            "GDEX.ETH",
-            "GDEX.BKBT",
-            "GDEX.GXC",
-            "GDEX.SEER",
-            "GDEX.FOTA",
-            "GDEX.JRC",
-            "GDEX.EOSDAC",
-            "GDEX.MTS",
-            "GDEX.GUSD",
-            "GDEX.IQ",
-            "GDEX.NULS",
-            "GDEX.USDT"
-             ],
-        openledgerTokens: ["OPEN.USD", "OPEN.KSH", "OPEN.GOLD"],
-        rudexTokens: [],
-        xbtsxTokens: [
-            "XBTSX.STH",
-            "XBTSX.POST",
-            "XBTSX.DOGE",
-            "XBTSX.BTC",
-            "XBTSX.BTG",
-            "XBTSX.BCH",
-            "XBTSX.LTC",
-            "XBTSX.DASH",
-            "XBTSX.NVC",
-            "XBTSX.UNI",
-            "XBTSX.NMC",
-            "XBTSX.WAVES",
-            "XBTSX.COF",
-            "XBTSX.MDL",
-            "XBTSX.ETH",
-            "XBTSX.EXR",
-            "XBTSX.USDT",
-            "XBTSX.TUSD",
-            "XBTSX.USDC",
-            "XBTSX.USDN",
-            "XBTSX.USD",
-            "XBTSX.RUB",
-            "XBTSX.EUR",
-            "XBTSX.ATRI",
-            "XBTSX.FIL",
-            "XBTSX.EOS",
-            "XBTSX.BAT"
-        ],
-        honestTokens: ["HONEST.BTC", "HONEST.USD"],
-        ioxbankTokens: ["IOB.XRP"],
-        otherTokens: ["CVCOIN", "HERO", "OCT", "HERTZ", "YOYOW"]
+            ]
+            //     "GOLD",
+            //     "KRW",
+            //     "RUBLE",
+            //     "SILVER"
+            // ],
+            // bridgeTokens: ["BRIDGE.BCO", "BRIDGE.BTC", "BRIDGE.MONA", "BRIDGE.ZNY"],
+            // gdexTokens: ["GDEX.BTC", "GDEX.BTO", "GDEX.EOS", "GDEX.ETH"],
+            // openledgerTokens: [
+            //     "OBITS",
+            //     "OPEN.BTC",
+            //     "OPEN.DASH",
+            //     "OPEN.DGD",
+            //     "OPEN.DOGE",
+            //     "OPEN.EOS",
+            //     "OPEN.EOSDAC",
+            //     "OPEN.ETH",
+            //     "OPEN.EURT",
+            //     "OPEN.GAME",
+            //     "OPEN.GRC",
+            //     "OPEN.INCNT",
+            //     "OPEN.KRM",
+            //     "OPEN.LISK",
+            //     "OPEN.LTC",
+            //     "OPEN.MAID",
+            //     "OPEN.MKR",
+            //     "OPEN.NEO",
+            //     "OPEN.OMG",
+            //     "OPEN.SBD",
+            //     "OPEN.STEEM",
+            //     "OPEN.TUSD",
+            //     "OPEN.USDT",
+            //     "OPEN.WAVES",
+            //     "OPEN.XMR",
+            //     "OPEN.ZEC",
+            //     "OPEN.ZRX"
+            // ],
+            // rudexTokens: [
+            //     "PPY",
+            //     "RUDEX.DCT",
+            //     "RUDEX.DGB",
+            //     "RUDEX.GBG",
+            //     "RUDEX.GOLOS",
+            //     "RUDEX.KRM",
+            //     "RUDEX.MUSE",
+            //     "RUDEX.SBD",
+            //     "RUDEX.STEEM",
+            //     "RUDEX.TT"
+            // ],
+            // winTokens: ["WIN.ETC", "WIN.ETH", "WIN.HSR"],
+            // xbtsxTokens: [
+            //     "XBTSX.STH",
+            //     "XBTSX.POST",
+            //     "XBTSX.DOGE",
+            //     "XBTSX.BTC",
+            //     "XBTSX.LTC",
+            //     "XBTSX.DASH",
+            //     "XBTSX.KEC",
+            //     "XBTSX.BCH",
+            //     "XBTSX.BTG",
+            //     "XBTSX.XSPEC",
+            //     "XBTSX.NVC"
+            // ],
+            // otherTokens: [
+            //     "BKT",
+            //     "BLOCKPAY",
+            //     "BTWTY",
+            //     "TWENTIX",
+            //     "BTSR",
+            //     "CADASTRAL",
+            //     "CVCOIN",
+            //     "HEMPSWEET",
+            //     "HERO",
+            //     "HERTZ",
+            //     "ICOO",
+            //     "IOU.CNY",
+            //     "KAPITAL",
+            //     "KEXCOIN",
+            //     "OCT",
+            //     "SMOKE",
+            //     "STEALTH",
+            //     "YOYOW",
+            //     "ZEPH"
+            // ]
     };
 
     let allTokens = [];
@@ -165,14 +187,82 @@ export function getMyMarketsQuotes() {
  *
  * @returns {list of string tuples}
  */
-
-
 export function getFeaturedMarkets(quotes = []) {
     return [
-        ["USD", "CBANK"],
-        ["CNY", "CBANK"],
-        ["CBANK", "USD"],
-        ["CBANK", "CNY"]
+        ["USD", "BTS"],
+        ["USD", "OPEN.BTC"],
+        ["USD", "OPEN.USDT"],
+        ["USD", "OPEN.ETH"],
+        ["USD", "OPEN.DASH"],
+        ["USD", "GOLD"],
+        ["USD", "HERO"],
+        ["USD", "GDEX.BTC"],
+        ["USD", "GDEX.ETH"],
+        ["USD", "GDEX.EOS"],
+        ["USD", "GDEX.BTO"],
+        ["USD", "OPEN.EOSDAC"],
+        ["CNY", "BTS"],
+        ["CNY", "OPEN.BTC"],
+        ["CNY", "USD"],
+        ["CNY", "OPEN.ETH"],
+        ["CNY", "YOYOW"],
+        ["CNY", "OCT"],
+        ["CNY", "GDEX.BTC"],
+        ["CNY", "GDEX.ETH"],
+        ["CNY", "GDEX.EOS"],
+        ["CNY", "GDEX.BTO"],
+        ["CNY", "GDEX.BTM"],
+        ["OPEN.BTC", "BTS"],
+        ["OPEN.BTC", "OPEN.ETH"],
+        ["OPEN.BTC", "OPEN.DASH"],
+        ["OPEN.BTC", "BLOCKPAY"],
+        ["OPEN.BTC", "OPEN.DGD"],
+        ["OPEN.BTC", "OPEN.STEEM"],
+        ["BTS", "OPEN.ETH"],
+        ["BTS", "OPEN.EOS"],
+        ["BTS", "PPY"],
+        ["BTS", "OPEN.STEEM"],
+        ["BTS", "OBITS"],
+        ["BTS", "RUBLE"],
+        ["BTS", "HERO"],
+        ["BTS", "OCT"],
+        ["BTS", "SILVER"],
+        ["BTS", "GOLD"],
+        ["BTS", "BLOCKPAY"],
+        ["BTS", "BTWTY"],
+        ["BTS", "SMOKE"],
+        ["BTS", "GDEX.BTC"],
+        ["BTS", "GDEX.ETH"],
+        ["BTS", "GDEX.EOS"],
+        ["BTS", "GDEX.BTO"],
+        ["BTS", "OPEN.EOSDAC"],
+        ["KAPITAL", "OPEN.BTC"],
+        ["USD", "OPEN.STEEM"],
+        ["USD", "OPEN.MAID"],
+        ["OPEN.USDT", "OPEN.BTC"],
+        ["OPEN.BTC", "OPEN.MAID"],
+        ["BTS", "OPEN.MAID"],
+        ["BTS", "OPEN.HEAT"],
+        ["BTS", "OPEN.INCENT"],
+        ["HEMPSWEET", "OPEN.BTC"],
+        ["KAPITAL", "BTS"],
+        ["BTS", "RUDEX.STEEM"],
+        ["USD", "RUDEX.STEEM"],
+        ["BTS", "RUDEX.SBD"],
+        ["BTS", "RUDEX.KRM"],
+        ["USD", "RUDEX.KRM"],
+        ["RUBLE", "RUDEX.GOLOS"],
+        ["CNY", "RUDEX.GOLOS"],
+        ["RUBLE", "RUDEX.GBG"],
+        ["CNY", "RUDEX.GBG"],
+        ["BTS", "RUDEX.MUSE"],
+        ["BTS", "RUDEX.TT"],
+        ["BTS", "RUDEX.SCR"],
+        ["BTS", "RUDEX.ETH"],
+        ["BTS", "RUDEX.DGB"],
+        ["BTS", "XBTSX.STH"],
+        ["BTS", "ZEPH"],
+        ["BTS", "HERTZ"]
     ].filter(a => {
         if (!quotes.length) return true;
         return quotes.indexOf(a[0]) !== -1;
@@ -206,55 +296,11 @@ export function getAssetHideNamespaces() {
     return [];
 }
 
-/*
-All trusted tokens
- */
-export function get_allTokens() {
-    return {
-        nativeTokens: ["CBANK", "BTC", "USD", "KES"],
-        rudexTokens: [
-            "DONATE",
-            "CBANK",
-            "LANDLORD",
-
-            "USD",
-            "ACB.LTC",
-            "ACB.ETH",
-            "ACB.EOS",
-            "ACB.PZM",
-            "ACB.GOLOS",
-            "ACB.STEEM",
-            "ACB.NBS",
-            "ACB.XMR",
-            "ACB.BTS",
-            "ACB.TRX",
-
-            "ACB.BNB",
-            "ACB.BUSD",
-            "BTCB",
-            "ACB.DEC",
-            "ACB.SPS"
-
-            //RuDEX MPA-s OLD
-            /*
-            "ACB.XBS",
-            "ACB.XBT",
-            "ACB.RUB",
-            "ACB.OIL",
-            "ACB.XAU"
-            */
-        ],
-        delistedTokens: ["ACB.PPY", "ACB.SMOKE", "ACB.WLS"],
-        otherTokens: []
-    };
-}
-
 /**
  * Allowed gateways that the user will be able to choose from in Deposit Withdraw modal
  * @param gateway
  * @returns {boolean}
  */
-
 export function allowedGateway(gateway) {
     return (
         ["OPEN", "RUDEX", "WIN", "BRIDGE", "GDEX", "XBTSX"].indexOf(gateway) >=
@@ -282,56 +328,3 @@ export function getDashboardAssets() {
 export function getDefaultBorrowAssets() {
     return ["USD", "EUR", "CNY", "GBP", "RUB", "BRL", "UAH"];
 }
-
-/**
- * The featured coins displayed on the Listing page of the UI
- *
- * @returns {[{[string]:[string]}]}
- */
-export function getListingCoins() {
-    return [
-        //soon: true, (for TON example)
-        {
-            name: "The 2027 Presidential candidate",
-            active: "yes",
-            ticker: "USD",
-            page: "https://morara.kebaso.com",
-            account: "nathan",
-            goal: 3000000,
-            votes: 0
-        },
-        {
-            name: "Kennedy Ventures",
-            active: "yes",
-            ticker: "USD",
-            page: "https://homepesa.com",
-            account: "dennis",
-            goal: 10000,
-            votes: 0
-        },
-        {
-            name: "Dennis K. Satia",
-            active: "yes",
-            ticker: "USD",
-            page: "https://web.acloudbank.com",
-            account: "purity",
-            goal: 28000,
-            votes: 0
-        }
-    ];
-}
-
-export function getListedCoins() {
-    return [
-        {
-            name: "ADAMANT Messenger",
-            active: "yes",
-            ticker: "USD",
-            page: "https://adamant.im",
-            account: "nathan",
-            goal: 10000,
-            votes: 0
-        }
-    ];
-}
-

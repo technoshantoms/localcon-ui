@@ -9,12 +9,7 @@ import SettingsActions from "actions/SettingsActions";
 import ZfApi from "react-foundation-apps/src/utils/foundation-api";
 import SendModal from "../../components/Modal/SendModal";
 import FormattedAsset from "../../components/Utility/FormattedAsset";
-
-//HTLC BRIDGE
-// import Deposit from "./components/Account/Deposit/Index";
-// import Withdraw from "./components/Account/Withdraw/Index";
-
-import DepositModal from "../../components/Modal/DepositModal";
+// import DepositModal from "../../components/Modal/DepositModal";
 import GatewayStore from "stores/GatewayStore";
 import Icon from "../../components/Icon/Icon";
 import Translate from "react-translate-component";
@@ -31,7 +26,7 @@ import notify from "actions/NotificationActions";
 import AccountImage from "../../components/Account/AccountImage";
 import Identicon from "../Account/Identicon";
 import {ChainStore} from "bitsharesjs/es";
-import WithdrawModal from "../../components/Modal/WithdrawModalNew";
+// import WithdrawModal from "../../components/Modal/WithdrawModalNew";
 import {List} from "immutable";
 import PropTypes from "prop-types";
 import {
@@ -76,19 +71,9 @@ class SettingsMenuUnWrapped extends React.Component {
             },
             {
                 label: "header.help",
-                path: "/deposit/new"
-            },
-            {
-                label: "header.help",
-                path: "/withdraw/new"
-            },
-            {
-                label: "header.help",
                 path: "/help"
             }
         ];
-
-
 
         return (
             <div className="settings">
@@ -141,9 +126,9 @@ class Header extends React.Component {
         this.state = {
             active: context.location.pathname,
             accountsListDropdownActive: false,
-            selectedAsset: "CBANK",
+            selectedAsset: "LLC",
             isBridgeModalVisible: false,
-            defaultAccount: "1.2.17",
+            defaultAccount: "1.2.3",
             defaultAsset: "USD"
         };
 
@@ -678,7 +663,7 @@ class Header extends React.Component {
 
         let tradeUrl = this.props.lastMarket
             ? `/market/${this.props.lastMarket}`
-            : "/market/CBANK_USD";
+            : "/market/LLC_USD";
 
         // Account selector: Only active inside the exchange
         let account_display_name, accountsList;
@@ -791,7 +776,24 @@ class Header extends React.Component {
                                         )}
                                     </a>
                                 </li>
- 
+                                {
+                                    <li className="mobile__list__item">
+                                        <a
+                                            className="mobile__list__link"
+                                            href="https://t.me/joinchat/LcDbAxahMjIxiRFhiDEJ2g"
+                                            target="_blank"
+                                            /*onClick={this._onNavigate.bind(
+                                                this,
+                                                "/OTC"
+                                            )}*/
+                                        >
+                                            {/* OTC */}
+                                            {counterpart.translate(
+                                                "header.otc"
+                                            )}
+                                        </a>
+                                    </li>
+                                }
                                 {
                                     <li className="mobile__list__item">
                                         <a
@@ -822,24 +824,6 @@ class Header extends React.Component {
                                         </a>
                                     </li>
                                 }
-
-                                {
-                                    <li className="mobile__list__item">
-                                        <a
-                                            className="mobile__list__link"
-                                            href="#"
-                                            onClick={this._onNavigate.bind(
-                                                this,
-                                                "/account/" + currentAccount
-                                            )}
-                                        >
-                                            {counterpart.translate(
-                                                "header.deposit-withdraw"
-                                            )}
-                                        </a>
-                                    </li>
-                                }
-
                                 {
                                     <li className="mobile__list__item">
                                         <a
@@ -852,6 +836,22 @@ class Header extends React.Component {
                                         >
                                             {counterpart.translate(
                                                 "header.explorer"
+                                            )}
+                                        </a>
+                                    </li>
+                                }
+                                {
+                                    <li className="mobile__list__item">
+                                        <a
+                                            className="mobile__list__link"
+                                            href="#"
+                                            onClick={this._onNavigate.bind(
+                                                this,
+                                                `/account/${currentAccount}/voting`
+                                            )}
+                                        >
+                                            {counterpart.translate(
+                                                "account.voting"
                                             )}
                                         </a>
                                     </li>
@@ -953,6 +953,24 @@ class Header extends React.Component {
                                 {
                                     <li className="navigation__item">
                                         <a
+                                            className="navigation__link"
+                                            href="https://t.me/joinchat/LcDbAxahMjIxiRFhiDEJ2g"
+                                            target="_blank"
+                                            /*onClick={this._onNavigate.bind(
+                                                this,
+                                                "/OTC"
+                                            )}*/
+                                        >
+                                            {/* OTC */}
+                                            {counterpart.translate(
+                                                "header.otc"
+                                            )}
+                                        </a>
+                                    </li>
+                                }
+                                {
+                                    <li className="navigation__item">
+                                        <a
                                             className="navigation__link "
                                             href="#"
                                             onClick={this._showSend.bind(this)}
@@ -1010,6 +1028,28 @@ class Header extends React.Component {
                                         </a>
                                     </li>
                                 }
+
+                                <li
+                                    className={cnames("navigation__item", {
+                                        active:
+                                            active.indexOf(
+                                                `/account/${currentAccount}/voting`
+                                            ) !== -1
+                                    })}
+                                >
+                                    <a
+                                        className="navigation__link"
+                                        href="#"
+                                        onClick={this._onNavigate.bind(
+                                            this,
+                                            `/account/${currentAccount}/voting`
+                                        )}
+                                    >
+                                        {counterpart.translate(
+                                            "account.voting"
+                                        )}
+                                    </a>
+                                </li>
 
                                 {
                                     <li className="navigation__item">
@@ -1205,17 +1245,17 @@ class Header extends React.Component {
                         currentAsset={this.state.defaultAsset}
                     />
                 ) : null}
-                <DepositModal
-                    ref="deposit_modal_new"
-                    modalId="deposit_modal_new"
-                    account={currentAccount}
-                    backedCoins={this.props.backedCoins}
-                />
-                <WithdrawModal
-                    ref="withdraw_modal_new"
-                    modalId="withdraw_modal_new"
-                    backedCoins={this.props.backedCoins}
-                />
+                {/*<DepositModal*/}
+                    {/*ref="deposit_modal_new"*/}
+                    {/*modalId="deposit_modal_new"*/}
+                    {/*account={currentAccount}*/}
+                    {/*backedCoins={this.props.backedCoins}*/}
+                {/*/>*/}
+                {/*<WithdrawModal*/}
+                    {/*ref="withdraw_modal_new"*/}
+                    {/*modalId="withdraw_modal_new"*/}
+                    {/*backedCoins={this.props.backedCoins}*/}
+                {/*/>*/}
             </header>
         );
     }

@@ -20,7 +20,7 @@ import EquivalentPrice from "../../components/Utility/EquivalentPrice";
 import LinkToAssetById from "../../components/Utility/LinkToAssetById";
 import utils from "common/utils";
 import BorrowModal from "../../components/Modal/BorrowModal";
-import DepositModal from "../../components/Modal/DepositModal";
+// import DepositModal from "../../components/Modal/DepositModal";
 import ReactTooltip from "react-tooltip";
 import SimpleDepositWithdraw from "../../components/Dashboard/SimpleDepositWithdraw";
 // import SimpleDepositBlocktradesBridge from "../../components/Dashboard/SimpleDepositBlocktradesBridge";
@@ -32,7 +32,7 @@ import {checkMarginStatus} from "common/accountHelper";
 import BalanceWrapper from "../../components/Account/BalanceWrapper";
 import SendModal from "../../components/Modal/SendModal";
 import PulseIcon from "../../components/Icon/PulseIcon";
-import WithdrawModal from "../../components/Modal/WithdrawModalNew";
+// import WithdrawModal from "../../components/Modal/WithdrawModalNew";
 import AccountTreemap from "../../components/Account/AccountTreemap";
 import {getBackedCoin} from "common/gatewayUtils";
 import AssetWrapper from "../../components/Utility/AssetWrapper";
@@ -66,14 +66,14 @@ class AccountOverview extends React.Component {
             tokens: [],
             alwaysShowAssets: [
                 "CBANK",
-                "BTC", "ETH", "DASH", "LTC", "USDT",
-                "EUR", "USD", "GBP", "CNY", "RUB", "UAH", "KSH", "OPEN.USD","OPEN.GOLD","OPEN.KSH"
+                "BTC", "ETH", "XMR", "DASH", "LTC", "USDT",
+                "EUR", "USD", "GBP", "CNY", "RUB", "UAH"
                 //,
-                //"CBANK",
+                //"USD",
                 //"CNY"
-                // "OPEN.USD",
-                // "OPEN.KSH",
-                // "OPEN.GOLD",
+                // "OPEN.BTC",
+                // "OPEN.USDT",
+                // "OPEN.ETH",
                 // "OPEN.MAID",
                 // "OPEN.STEEM",
                 // "OPEN.DASH"

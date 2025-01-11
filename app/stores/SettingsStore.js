@@ -201,7 +201,7 @@ class SettingsStore {
             // Default markets setup
             let topMarkets = {
                 markets_4018d784: getMyMarketsQuotes(),
-                markets_e1605132: getMyMarketsQuotes(),
+                markets_806101b8: getMyMarketsQuotes(),
                 markets_39f5e2ed: [
                     // TESTNET
                     "PEG.FAKEUSD",
@@ -211,7 +211,7 @@ class SettingsStore {
 
             let bases = {
                 markets_4018d784: getMyMarketsBases(),
-                markets_e1605132: getMyMarketsBases(),
+                markets_806101b8: getMyMarketsBases(),
                 markets_39f5e2ed: [
                     // TESTNET
                     "TEST"
@@ -220,7 +220,7 @@ class SettingsStore {
 
             let coreAssets = {
                 markets_4018d784: "BTS",
-                markets_e1605132: "CBANK",
+                markets_806101b8: "CBANK",
                 markets_39f5e2ed: "TEST"
             };
             let coreAsset = coreAssets[this.starredKey] || "CBANK";

@@ -70,7 +70,7 @@ class Footer extends React.Component {
         var theme = SettingsStore.getState().settings.get("themes");
 
         if (hintData.length == 0) {
-            window.open("/", "_blank");
+            window.open("/help", "_blank");
         } else {
             guide
                 .introJs()
@@ -221,15 +221,13 @@ class Footer extends React.Component {
                     </div>
                     <div className="footer-right">
                         <Social />
-                      {/*
-                       <button
+                        <button
                             className="btn large inverted flat support-btn"
                             type="button"
                             onClick={this.chatToggle.bind(this)}
                         >
-                          Chat
+                            Chat
                         </button>
-                      */}  
                         <div
                             className="footer-info"
                             onClick={() => {
@@ -291,7 +289,7 @@ class Footer extends React.Component {
                             type="button"
                             onClick={e => {
                                 e.preventDefault();
-                                this.context.router.push("/");
+                                this.context.router.push("/help");
                             }}
                         >
                             {counterpart.translate("global.help")}
@@ -327,9 +325,15 @@ class Social extends Component {
     render() {
         let socialArr = [
             { item: "btc", href: "https://bitcointalk.org/index.php?topic=5125670", img: "btc" },
-            { item: "vk", href: "https://org.acloudbank.com/mobile-android", img: "vk" },
-             { item: "vk", href: "https://org.acloudbank.com/mobile-android", img: "vk" },
+            { item: "vk", href: "https://vk.com/localcoin", img: "vk" },
+            { item: "tm", href: "https://t.me/LocalCoinIS", img: "tm" },
             { item: "discord", href: "https://discord.gg/vzxSzYN", img: "s-584" },
+            { item: "medium", href: "https://medium.com/@localcoinis", img: "m-1" },
+            { item: "golos", href: "https://golos.io/@localcoin", img: "s-574" },
+            { item: "reddit", href: "https://www.reddit.com/r/LocalCoinIs", img: "redd" },
+            { item: "steemit", href: "https://steemit.com/@localcoin", img: "s-576" },
+            { item: "twitter", href: "https://twitter.com/LocalCoinIS", img: "tw" },
+            { item: "coinmarket", href: "https://coinmarketcap.com/exchanges/localcoin-dex/", img: "cmc" },
         ];
 
         let list = socialArr.map((item, i) => {
