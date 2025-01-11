@@ -663,7 +663,7 @@ class Header extends React.Component {
 
         let tradeUrl = this.props.lastMarket
             ? `/market/${this.props.lastMarket}`
-            : "/market/LLC_USD";
+            : "/market/CBANK_USD";
 
         // Account selector: Only active inside the exchange
         let account_display_name, accountsList;
@@ -776,24 +776,7 @@ class Header extends React.Component {
                                         )}
                                     </a>
                                 </li>
-                                {
-                                    <li className="mobile__list__item">
-                                        <a
-                                            className="mobile__list__link"
-                                            href="https://t.me/joinchat/LcDbAxahMjIxiRFhiDEJ2g"
-                                            target="_blank"
-                                            /*onClick={this._onNavigate.bind(
-                                                this,
-                                                "/OTC"
-                                            )}*/
-                                        >
-                                            {/* OTC */}
-                                            {counterpart.translate(
-                                                "header.otc"
-                                            )}
-                                        </a>
-                                    </li>
-                                }
+                              
                                 {
                                     <li className="mobile__list__item">
                                         <a
@@ -840,7 +823,7 @@ class Header extends React.Component {
                                         </a>
                                     </li>
                                 }
-                                {
+                        {/*        {
                                     <li className="mobile__list__item">
                                         <a
                                             className="mobile__list__link"
@@ -855,7 +838,7 @@ class Header extends React.Component {
                                             )}
                                         </a>
                                     </li>
-                                }
+                                }*/}
                                 { !window.electron || ( typeof window.process === "undefined" ||
                                                         typeof window.process.platform === "undefined" ||
                                                         window.process.platform.lastIndexOf("win") === -1 ) ? null :
@@ -904,7 +887,7 @@ class Header extends React.Component {
                                         </a>
                                     </li>
                                 }
-                                {
+                                {/*{
                                     <li className="mobile__list__item">
                                         <a
                                             href="#"
@@ -918,7 +901,7 @@ class Header extends React.Component {
                                             )}
                                         </a>
                                     </li>
-                                }
+                                }*/}
                             </ul>
                         </div>
                     </div>
@@ -950,24 +933,7 @@ class Header extends React.Component {
                                         )}
                                     </a>
                                 </li>
-                                {
-                                    <li className="navigation__item">
-                                        <a
-                                            className="navigation__link"
-                                            href="https://t.me/joinchat/LcDbAxahMjIxiRFhiDEJ2g"
-                                            target="_blank"
-                                            /*onClick={this._onNavigate.bind(
-                                                this,
-                                                "/OTC"
-                                            )}*/
-                                        >
-                                            {/* OTC */}
-                                            {counterpart.translate(
-                                                "header.otc"
-                                            )}
-                                        </a>
-                                    </li>
-                                }
+                                
                                 {
                                     <li className="navigation__item">
                                         <a
@@ -1029,7 +995,7 @@ class Header extends React.Component {
                                     </li>
                                 }
 
-                                <li
+                               {/* <li
                                     className={cnames("navigation__item", {
                                         active:
                                             active.indexOf(
@@ -1049,7 +1015,7 @@ class Header extends React.Component {
                                             "account.voting"
                                         )}
                                     </a>
-                                </li>
+                                </li>*/}
 
                                 {
                                     <li className="navigation__item">

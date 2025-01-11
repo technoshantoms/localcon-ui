@@ -45,7 +45,8 @@ class CreateAccountPassword extends React.Component {
             confirm_password: "",
             understand_1: false,
             understand_2: false,
-            understand_3: false
+            understand_3: false,
+            understand_4: false
         };
         this.onFinishConfirm = this.onFinishConfirm.bind(this);
 
@@ -340,6 +341,16 @@ class CreateAccountPassword extends React.Component {
                             "checkbox-2",
                             this.state.understand_1,
                             this._onInput.bind(this, "understand_1")
+                        )}
+                    </div>
+                    <br />
+                    <br />
+                    <div className="confirm-checks">
+                        {this._renderCheckbox(
+                            counterpart.translate("wallet.understand_4"),
+                            "checkbox-4",
+                            this.state.understand_1,
+                            this._onInput.bind(this, "understand_4")
                         )}
                     </div>
                     <br />

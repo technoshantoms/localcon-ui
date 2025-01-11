@@ -310,7 +310,7 @@ const routes = (
                 footerBlock: Footer
             }}
         />
-        <Route
+      {/*  <Route
             path="OTC"
             getComponents={(location, cb) => {
                 Promise.all([
@@ -322,7 +322,7 @@ const routes = (
                     .then(loadMultiComponentsRoute(cb))
                     .catch(errorLoading);
             }}
-        />
+        />*/}
         <Route
             path="activenode"
             getComponents={(location, cb) => {
@@ -627,14 +627,14 @@ const routes = (
                         .catch(errorLoading);
                 }}
             />
-            <Route
+           {/* <Route
                 path="voting"
                 getComponent={(location, cb) => {
                     import("components/Account/AccountVoting")
                         .then(loadRoute(cb))
                         .catch(errorLoading);
                 }}
-            />
+            />*/}
             <Route
                 path="activenodes"
                 getComponent={(location, cb) => {
