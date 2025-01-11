@@ -475,8 +475,8 @@
         "balance": "Balance",
         "base_supply": "Base supply",
         "bids": "Buy orders",
-        "borrow": "deposit-withdraw",
-        "borrow_short": "deposit-withdraw",
+        "borrow": "Borrow",
+        "borrow_short": "Borrow",
         "buy": "Buy",
         "buy_description": "Buy %(baseAsset)s %(baseName)s for %(quoteAsset)s %(quoteName)s",
         "buy_min": "Buy at least",
@@ -1034,7 +1034,7 @@
         },
         "disconnected": "API Node is disconnected",
         "dollar": {
-            "borrow": "deposit-withdraw",
+            "borrow": "Borrow",
             "buy": "Buy"
         },
         "download": "Download new version of Cloud Bank UI",

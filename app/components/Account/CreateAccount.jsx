@@ -325,20 +325,6 @@ class CreateAccount extends React.Component {
                             <Translate content="settings.backup_brainkey" />
                         </Link>
                     </label>
-                     <p
-                            style={{
-                                paddingLeft: "0.4rem",
-                                fontSize: "1rem",
-                                textIndent: 3,
-                                lineHeight: 1.6,
-                                textTransform: "none"
-                            }}
-                        >
-                            <Translate
-                                unsafe
-                                content="wallet.create_account_you_agree_that_had_read"
-                            />
-                        </p>
                 </div>
 
                 {/* Skip to step 3 */}
