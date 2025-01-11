@@ -1,0 +1,5 @@
+export default {
+    MAIN_NET:
+        "e1605132ecd5ffdf8635b2432d3b6df35d0a0b18572b5120e82acb132c02d6a1",
+    TEST_NET: "39f5e2ede1f8bc1a3a54a7914414e3779e33193f1f5693510e73cb7a87617447"
+};
