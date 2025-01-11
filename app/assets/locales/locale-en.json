@@ -18,7 +18,7 @@
             "known": "Known by"
         },
         "contacts": "Contacts",
-        "create_account": "Create account",
+        "create_account": "Register",
         "create_account_type": {
             "cloud_wallet": {
                 "head": "Cloud Bank",
@@ -1107,7 +1107,7 @@
         "add_new_account": "Add a new account",
         "backup_your_brainKey": "Backup your BrainKey",
         "collateral_ratio": "Collateral ratio",
-        "create_account": "Create Account",
+        "create_account": "Register",
         "create_asset": "Create Asset",
         "current": "Current Account",
         "dashboard": "Dashboard",
@@ -1233,7 +1233,7 @@
         },
         "user": {
             "account": "Account",
-            "create_account": "Create account",
+            "create_account": "Register",
             "following": "You are following this user"
         },
         "warning": "Permissions",
@@ -1746,7 +1746,7 @@
         "to": "to",
         "transaction_confirmed": "Transaction confirmed",
         "trxTypes": {
-            "account_create": "Create account",
+            "account_create": "Register",
             "account_transfer": "Transfer Account",
             "account_update": "Update account",
             "account_upgrade": "Upgrade Account",
