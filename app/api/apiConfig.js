@@ -1,14 +1,4 @@
 import {getFaucet, getTestFaucet} from "../branding";
-import {
-    EES_BASE_URL,
-    //RECAPTCHA_KEY,
-    REGISTRATION_SERVICE_BASE_URL,
-    DEFAULT_WS_NODE,
-    WS_NODE_LIST_URL_NODE1,
-    WS_NODE_LIST_URL_NODE2,
-    WS_NODE_LIST_URL_NODE3
-} from "./env.js";
-
 export const ioxbankAPIs = {
     BASE: "https://api.ioxbank.com/bitshares",
     COINS_LIST: "/coins",
@@ -95,84 +85,15 @@ export const gdexAPIs = {
     WITHDRAW_RULE: "/gateway/withdraw/rule"
 };
 
-export const xbtsxAPIs = {
-    BASE: "",
-    COINS_LIST: ""
-};
-
-export const nodeRegions = [
-    // region of the node follows roughly https://en.wikipedia.org/wiki/Subregion#/media/File:United_Nations_geographical_subregions.png
-    "Northern Europe",
-    "Western Europe",
-    "Southern Europe",
-    "Eastern Europe",
-    "Northern Asia",
-    "Western Asia",
-    "Southern Asia",
-    "Eastern Asia",
-    "Central Asia",
-    "Southeastern Asia",
-    "Australia and New Zealand",
-    "Melanesia",
-    "Polynesia",
-    "Micronesia",
-    "Northern Africa",
-    "Western Africa",
-    "Middle Africa",
-    "Eastern Africa",
-    "Southern Africa",
-    "Northern America",
-    "Central America",
-    "Caribbean",
-    "South America"
-];
-
 export const settingsAPIs = {
-    // If you want a location to be translated, add the translation to settings in locale-xx.js
-    // and use an object {translate: key} in WS_NODE_LIST
-    DEFAULT_WS_NODE,
+    DEFAULT_WS_NODE: "wss://wss.acloudbank.com",
     WS_NODE_LIST: [
-          {
-            url: WS_NODE_LIST_URL_NODE1,
-            location: "CloudBank Labs LLC node",
-            region: "Northern America",
-            country: "USA"
-        },
-        {
-            url: WS_NODE_LIST_URL_NODE2,
-            location: "LocalBank LLC node",
-            region: "Asia",
-            country: "India"
-        },
-        {
-            url: WS_NODE_LIST_URL_NODE3,
-            location: "CloudBank Labs LLC node",
-            region: "Africa America",
-            country: "USA"
-        }
+        {url: "wss://wss.acloudbank.com", location: "connected"},
+        {url: "wss://wss.acloudbank.com", location: "US Denver by crazy-indain"},
+        {url: "wss://wss.acloudbank.com", location: "Africa"},
+        {url: "wss://wss.acloudbank.com", location: "Russia"}
     ],
-    ES_WRAPPER_LIST: [],
-    DEFAULT_FAUCET: getFaucet().url,
-    TESTNET_FAUCET: getTestFaucet().url
-};
-
-export const EesAPI = {
-    BASE: EES_BASE_URL,
-    EES_SETTINGS: "/settings",
-    SUBMIT_DEPOSIT_REQUEST: "/deposit",
-    SUBMIT_WITHDRAW_REQUEST: "/withdraw",
-    CHECK_DEPOSIT_SUBMITTED_TO_INTERNAL_BLOCKCHAIN: "/deposit/submitted",
-    GET_WITHDRAW_EXTERNAL_CONTRACT_ID: "/withdraw/get-external-contract-id",
-    GET_DEPOSIT_EXTERNAL_CONTRACT_ID: "/deposit/get-external-contract-id",
-    GET_DEPOSITS_STATUSES: "/deposit/get-statuses"
-};
-
-export const RegistrationServiceAPI = {
-    BASE: REGISTRATION_SERVICE_BASE_URL,
-    ACCOUNTS_ENDPOINT: "/api/v1/accounts"
-    //ReCAPTCHA_KEY: RECAPTCHA_KEY
-};
-
-export const TokenDistributionAPI = {
-    PHRASE: "I {CBANK_USER_NAME} want to claim CBANK tokens. {DATE}."
+    DEFAULT_FAUCET: "https://faucet.acloudbank.com", // 2018-12-infrastructure worker proposal
+    TESTNET_FAUCET: "https://faucet.testnet.acloudbank.com",
+    RPC_URL: "https://api.llc.is/apidocs/"
 };
