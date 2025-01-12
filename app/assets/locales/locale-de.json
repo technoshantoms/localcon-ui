@@ -738,7 +738,7 @@
         "loading": "Lade ...",
         "nosync": "Dein Verbindungsknoten ist nicht mehr synchron.",
         "synced": "Synchronisiert",
-        "title": "LocalCoin",
+        "title": "CloudBank",
         "unsynced": "Keine Synchronisation",
         "update_available": "Aktualisierung verfügbar"
     },

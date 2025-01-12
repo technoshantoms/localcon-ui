@@ -728,7 +728,7 @@
         "loading": "载入中…",
         "nosync": "区块链数据陈旧，请等待数据完成同步",
         "synced": "已同步",
-        "title": "LocalCoin",
+        "title": "CloudBank",
         "unsynced": "未同步",
         "update_available": "有可用的更新"
     },

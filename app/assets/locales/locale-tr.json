@@ -728,7 +728,7 @@
         "loading": "Yükleniyor...",
         "nosync": "Blokzinciri ile eşzamanlı değil, lütfen senkronize olana kadar bekleyin...",
         "synced": "Synced",
-        "title": "LocalCoin",
+        "title": "CloudBank",
         "unsynced": "Out of sync",
         "update_available": "UPDATE AVAILABLE"
     },

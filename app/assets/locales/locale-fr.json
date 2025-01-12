@@ -727,7 +727,7 @@
         "loading": "Loading...",
         "nosync": "Your active node is out of sync",
         "synced": "Synced",
-        "title": "LocalCoin",
+        "title": "CloudBank",
         "unsynced": "Out of sync",
         "update_available": "UPDATE AVAILABLE"
     },
@@ -896,7 +896,7 @@
         "payments_beta": "Send (Beta)",
         "payments_legacy": "Send (legacy)",
         "settings": "Options",
-        "title": "LocalCoin",
+        "title": "CloudBank",
         "unlock": "Dévérouiller",
         "unlock_password": "Log in using a password",
         "unlock_short": "Connexion",

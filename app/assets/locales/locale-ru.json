@@ -829,7 +829,7 @@
         "loading": "Загрузка...",
         "nosync": "Ваш активный узел не синхронизирован",
         "synced": "Синхронизирован",
-        "title": "LocalCoin",
+        "title": "CloudBank",
         "unsynced": "Не синхронизирован",
         "update_available": "ДОСТУПНО ОБНОВЛЕНИЕ"
     },
