@@ -326,13 +326,13 @@ class Social extends Component {
         let socialArr = [
             { item: "btc", href: "https://bitcointalk.org/index.php?topic=5125670", img: "btc" },
             { item: "vk", href: "https://vk.com/localco", img: "vk" },
-            { item: "tm", href: "https://t.me/LocalCoIS", img: "tm" },
-            { item: "discord", href: "https://discord.gg/vzxSzN", img: "s-584" },
-            { item: "medium", href: "https://medium.com/@locacoinis", img: "m-1" },
-            { item: "golos", href: "https://golos.io/@locacoin", img: "s-574" },
-            { item: "reddit", href: "https://www.reddit.com/r/LocalCoIs", img: "redd" },
+            { item: "tm", href: "https://t.me/LocalCoI", img: "tm" },
+            { item: "discord", href: "https://discord.gg/vzSzN", img: "s-584" },
+            { item: "medium", href: "https://medium.com/@locacoiis", img: "m-1" },
+            { item: "golos", href: "https://golos.io/@locacoi", img: "s-574" },
+            { item: "reddit", href: "https://www.reddit.com/r/LocalCoI", img: "redd" },
             { item: "steemit", href: "https://steemit.com/@localcoin", img: "s-576" },
-            { item: "twitter", href: "https://twitter.com/LocaCoIS", img: "tw" },
+            { item: "twitter", href: "https://twitter.com/LocaCoS", img: "tw" },
             { item: "coinmarket", href: "https://coinmarketcap.com/exchanges/localo-dex/", img: "cmc" },
         ];
 
