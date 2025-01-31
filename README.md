@@ -2,20 +2,20 @@ Deployment rules
 ============
 1. Compile "npm run build"
 2. Push your build to dev branch
-3. Check test server https://devwallet.localcoin.is, if it's ok merge to live branch, push
+3. Check test server https://devwallet.localBank.is, if it's ok merge to live branch, push
 
 Build will be autodeployed to the server. Working by ssh, keep in mind proper chown&chmod.
 
-LocalCoin-UI
+LocalBank-UI
 =======
 
-This is a light wallet that connects to a LocalCoin API provided by the *witness_node* executable.
+This is a light wallet that connects to a LocalBank API provided by the *witness_node* executable.
 
 It *stores all keys locally* in the browser, *never exposing your keys to anyone* as it signs transactions locally before transmitting them to the API server which then broadcasts them to the blockchain network. The wallet is encrypted with a password of your choosing and encrypted in a browser database.
 
 ## Getting started
 
-LocalCoin-UI depends node Node.js, and version 9+ is required.
+LocalBank-UI depends node Node.js, and version 9+ is required.
 
 On Ubuntu and OSX, the easiest way to install Node is to use the [Node Version Manager](https://github.com/creationix/nvm).
 
@@ -30,8 +30,8 @@ nvm use v9
 Once you have Node installed, you can clone the repo:
 
 ```
-git clone https://github.com/localcoinis/localcoin-ui.git
-cd localcoin-ui
+git clone https://github.com/localBankis/localBank-ui.git
+cd localBank-ui
 ```
 
 Before launching the GUI you will need to install the npm packages:
@@ -54,8 +54,8 @@ Once the compilation is done the GUI will be available in your browser at: `loca
 
 
 ## TODO: Testnet
-By default localcoin-ui connects to the live LocalCoin network.
-TODO: (switch it to the testnet. To do so, open the UI in a browser, go to Settings, then under Access, select the *Public Testnet Server* in the dropdown menu. You should also change the faucet if you need to create an account, the testnet faucet address is https://testnet.localcoin.is.)
+By default localBank-ui connects to the live LocalBank network.
+TODO: (switch it to the testnet. To do so, open the UI in a browser, go to Settings, then under Access, select the *Public Testnet Server* in the dropdown menu. You should also change the faucet if you need to create an account, the testnet faucet address is https://testnet.localBank.is.)
 
 The UI will reload and connect to the testnet, where you can use the faucet to create an account and receive an initial sum of test LLC.
 
@@ -90,7 +90,7 @@ This will compile the UI with some special modifications for use with Electron, 
 ## Contributing
 Please work off the staging branch (dev) and make pull requests to that branch. The master branch will only be updated for new releases.
 
-If you would like to get involved, we have a [Telegram chatroom](https://t.me/LocalCoinIS) where you can ask questions and get help. You may also join [LocalCoin on Discord](https://discord.gg/vzxSzYN)
+If you would like to get involved, we have a [Telegram chatroom](https://t.me/LocalBankIS) where you can ask questions and get help. You may also join [LocalBank on Discord](https://discord.gg/vzxSzYN)
 
 ## Development process
 
